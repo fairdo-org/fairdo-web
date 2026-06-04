@@ -1,0 +1,72 @@
+# .github/workflows/gh-pages.yml
+name: Deploy Hugo site to GitHub Pages
+
+# --------------------------------------------------------------
+# When to run the workflow
+# --------------------------------------------------------------
+on:
+  push:
+      branches:
+      - main            # <-- change if your default branch is called something else
+  workflow_dispatch:   # allows you to run it manually from the Actions tab
+
+# --------------------------------------------------------------
+# Jobs
+# --------------------------------------------------------------
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed for the peaceiris/actions-gh-pages step
+
+    steps:
+      # --------------------------------------------------------
+      # 2.1  Checkout the repository (source files)
+      # --------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # fetch the whole history – required for the gh‑pages push
+          fetch-depth: 0
+
+      # --------------------------------------------------------
+      # 2.2  Set up Hugo (extended version – needed for SCSS)
+      # --------------------------------------------------------
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'          # or a specific version, e.g. 0.124.1
+          extended: true                  # we need the extended build for SCSS
+
+      # --------------------------------------------------------
+      # 2.3  (Optional) Cache Hugo modules / npm / node_modules
+      # --------------------------------------------------------
+      - name: Cache Hugo modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/hugo
+            resources/_gen
+          key: ${{ runner.os }}-hugo-${{ hashFiles('config.toml', 'hugo.toml', 'go.mod') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
+      # --------------------------------------------------------
+      # 2.4  Build the site
+      # --------------------------------------------------------
+      - name: Build Hugo site
+        run: hugo --minify
+
+      # --------------------------------------------------------
+      # 2.5  Deploy the generated `public/` folder to the gh‑pages branch
+      # --------------------------------------------------------
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public               # folder Hugo just built
+          publish_branch: gh-pages            # target branch
+          # optional: keep a clean history (force push)
+          force_orphan: true                  # creates a fresh orphan branch each run
+          # optional: set a custom domain (if you have one)
+          # cname: example.com
