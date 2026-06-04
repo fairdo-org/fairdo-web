@@ -7,8 +7,8 @@ theme = "fairdo"
 [params]
   description  = "We build fair and open systems."
   tagline      = "Advancing fairness, openness, and transparency in digital infrastructure."
-  logo         = "/images/logos/FAIRDOFORUM-logo.png"
-  favicon      = "/images/favicon.png"
+  logo         = "images/logos/FAIRDOFORUM-logo.png"
+  favicon      = "images/favicon.png"
 
   [params.ctaButton]
     label = "Get Involved"
