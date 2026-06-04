@@ -12,7 +12,7 @@ theme = "fairdo"
 
   [params.ctaButton]
     label = "Get Involved"
-    url   = "contact"
+    url   = "/contact"
 
 #  [[params.social]]
 #    name = "Twitter"
