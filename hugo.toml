@@ -1,4 +1,5 @@
-baseURL = "https://fairdo.org"
+baseURL = "https://fairdo-org.github.io/fairdo-web/"
+#baseURL = "https://fairdo.org"
 languageCode = "en-us"
 title = "FDO Forum"
 theme = "fairdo"
