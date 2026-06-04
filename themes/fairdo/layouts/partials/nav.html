@@ -44,7 +44,7 @@
 
       {{ with .Site.Params.ctaButton }}
         <li class="nav__item nav__item--cta">
-          <a href="{{ .url | absURL }}" class="btn btn--primary btn--sm">{{ .label }}</a>
+          <a href="{{ .url }}" class="btn btn--primary btn--sm">{{ .label }}</a>
         </li>
       {{ end }}
     </ul>
