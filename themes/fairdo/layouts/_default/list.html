@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <div class="container page-header__content">
+    <h1 class="page-header__title">{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="page-header__desc">{{ . }}</p>
+    {{ end }}
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter tags -->
+    {{ $terms := .Site.Taxonomies.categories }}
+    {{ if $terms }}
+      <div class="filter-bar">
+        <a href="{{ .RelPermalink }}" class="filter-bar__tag {{ if not .IsHome }}filter-bar__tag--active{{ end }}">All</a>
+        {{ range $name, $pages := $terms }}
+          <a href="{{ "/categories/" | relURL }}{{ $name | urlize }}" class="filter-bar__tag">{{ $name }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <div class="cards cards--3">
+      {{ range .Pages }}
+        <article class="card card--post">
+          {{ with .Params.image }}
+            <a href="{{ $.RelPermalink }}" class="card__img-wrap">
+              <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" class="card__img" />
+            </a>
+          {{ end }}
+          <div class="card__body">
+            {{ with .Params.categories }}
+              <span class="card__tag">{{ index . 0 }}</span>
+            {{ end }}
+            <h2 class="card__title card__title--list">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <p class="card__text">{{ .Summary | truncate 140 }}</p>
+            <div class="card__meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+              {{ with .ReadingTime }}
+                <span>· {{ . }} min read</span>
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+
+    <!-- Pagination -->
+    {{ template "_internal/pagination.html" . }}
+
+  </div>
+</section>
+
+{{ end }}

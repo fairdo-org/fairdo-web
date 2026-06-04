@@ -1,0 +1,9 @@
+name = "fairdo"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Hugo theme for fairdo.org"
+homepage = "https://github.com/yourname/hugo-theme-fairdo"
+min_version = "0.80.0"
+[author]
+name = "Sven Bingert"
+homepage = "https://fairdo.org"

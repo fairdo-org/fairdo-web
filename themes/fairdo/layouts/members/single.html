@@ -1,0 +1,175 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <div class="container page-header__content">
+    <h1 class="page-header__title">{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="page-header__desc">{{ . }}</p>
+    {{ end }}
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Stats bar -->
+    <div class="members-stats">
+      <div class="members-stat">
+        <span class="members-stat__number">{{ len .Site.Data.members }}</span>
+        <span class="members-stat__label">Members</span>
+      </div>
+      <div class="members-stat">
+        <span class="members-stat__number">
+          {{ $countries := slice }}
+          {{ range .Site.Data.members }}
+            {{ $countries = $countries | append .country }}
+          {{ end }}
+          {{ len ($countries | uniq) }}
+        </span>
+        <span class="members-stat__label">Countries</span>
+      </div>
+      <div class="members-stat">
+        <span class="members-stat__number">
+          {{ $affiliations := slice }}
+          {{ range .Site.Data.members }}
+            {{ $affiliations = $affiliations | append .affiliation }}
+          {{ end }}
+          {{ len ($affiliations | uniq) }}
+        </span>
+        <span class="members-stat__label">Institutions</span>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="members-filter" id="members-filter">
+      <input
+        type="text"
+        class="members-search"
+        id="members-search"
+        placeholder="Search by name, institution or country..."
+        aria-label="Search members"
+      >
+    </div>
+
+    <!-- Member count -->
+    <p class="members-count" id="members-count">
+      Showing {{ len .Site.Data.members }} members
+    </p>
+
+    <!-- Member grid -->
+    <div class="members-grid" id="members-grid">
+      {{ range .Site.Data.members }}
+        <div class="member-card"
+          data-name="{{ .name | lower }}"
+          data-affiliation="{{ .affiliation | lower }}"
+          data-country="{{ .country | lower }}">
+
+          <!-- Avatar -->
+          <div class="member-card__avatar">
+            {{ if .image }}
+              <img
+                src="{{ .image | relURL }}"
+                alt="{{ .name }}"
+                loading="lazy"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+              >
+              <span class="member-card__initials" style="display:none;">
+                {{ range split .name " " }}{{ substr . 0 1 }}{{ end }}
+              </span>
+            {{ else }}
+              <span class="member-card__initials">
+                {{ range split .name " " }}{{ substr . 0 1 }}{{ end }}
+              </span>
+            {{ end }}
+          </div>
+
+          <!-- Info -->
+          <div class="member-card__info">
+            <div class="member-card__top">
+              <h3 class="member-card__name">{{ .name }}</h3>
+              {{ with .role }}
+                {{ if eq . "Chair" }}
+                  <span class="member-card__badge member-card__badge--chair">{{ . }}</span>
+                {{ else if eq . "Vice Chair" }}
+                  <span class="member-card__badge member-card__badge--vice">{{ . }}</span>
+                {{ else }}
+                  <span class="member-card__badge">{{ . }}</span>
+                {{ end }}
+              {{ end }}
+            </div>
+            <p class="member-card__affiliation">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              {{ .affiliation }}
+            </p>
+            <p class="member-card__country">
+              <span class="member-card__flag">{{ .flag }}</span>
+              {{ .country }}
+            </p>
+          </div>
+
+        </div>
+      {{ end }}
+    </div>
+
+    <!-- No results message -->
+    <div class="members-empty" id="members-empty" style="display:none;">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <p>No members found matching your search.</p>
+      <button class="btn btn--outline btn--sm" id="clear-search">Clear search</button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  const search     = document.getElementById('members-search');
+  const grid       = document.getElementById('members-grid');
+  const empty      = document.getElementById('members-empty');
+  const countEl    = document.getElementById('members-count');
+  const clearBtn   = document.getElementById('clear-search');
+  const cards      = Array.from(grid.querySelectorAll('.member-card'));
+  const total      = cards.length;
+
+  function filterMembers() {
+    const query = search.value.toLowerCase().trim();
+    let visible = 0;
+
+    cards.forEach(card => {
+      const name        = card.dataset.name;
+      const affiliation = card.dataset.affiliation;
+      const country     = card.dataset.country;
+      const matches     = !query ||
+        name.includes(query) ||
+        affiliation.includes(query) ||
+        country.includes(query);
+
+      card.style.display = matches ? '' : 'none';
+      if (matches) visible++;
+    });
+
+    countEl.textContent = query
+      ? 'Showing ' + visible + ' of ' + total + ' members'
+      : 'Showing ' + total + ' members';
+
+    empty.style.display  = visible === 0 ? 'flex' : 'none';
+    grid.style.display   = visible === 0 ? 'none' : '';
+  }
+
+  search?.addEventListener('input', filterMembers);
+
+  clearBtn?.addEventListener('click', () => {
+    search.value = '';
+    filterMembers();
+    search.focus();
+  });
+})();
+</script>
+
+{{ end }}

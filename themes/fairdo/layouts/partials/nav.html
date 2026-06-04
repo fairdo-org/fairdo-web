@@ -1,0 +1,52 @@
+<nav class="nav" id="main-nav">
+  <div class="nav__container">
+    <!-- Logo -->
+    <a href="{{ "/" | relURL }}" class="nav__logo">
+      {{ with .Site.Params.logo }}
+        <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        <span class="nav__logo-text">{{ .Site.Title }}</span>
+      {{ end }}
+    </a>
+
+    <!-- Hamburger -->
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu -->
+    <ul class="nav__menu" id="nav-menu">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <li class="nav__item nav__item--dropdown">
+            <a href="{{ .URL }}" class="nav__link nav__link--parent">
+              {{ .Name }}
+              <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <ul class="nav__dropdown">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}" class="nav__dropdown-link">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ else }}
+          <li class="nav__item">
+            <a href="{{ .URL }}" class="nav__link {{ if $.IsHome }}{{ if eq .URL "/" }}nav__link--active{{ end }}{{ else }}{{ if $.Page.HasMenuCurrent "main" . }}nav__link--active{{ end }}{{ end }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Site.Params.ctaButton }}
+        <li class="nav__item nav__item--cta">
+          <a href="{{ .url }}" class="btn btn--primary btn--sm">{{ .label }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

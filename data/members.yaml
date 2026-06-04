@@ -1,0 +1,334 @@
+# data/members.yaml
+# -----------------------------------------------------------------
+# Each entry contains:
+#   name        – full name (quoted when it contains commas, parentheses, etc.)
+#   affiliation – institution or “–” when none is given
+#   country     – two‑letter country code (or the code you used in the source)
+#   groups      – array of short group codes:
+#                 SC  = Steering Committee
+#                 EB  = Executive Board (Co‑Chairs) and Secretariat
+#                 TSIG = TSIG Working Group
+#   roles       – array of roles; default is ["member"]
+# -----------------------------------------------------------------
+
+- name: "AIZAWA, Takafumi"
+  affiliation: "RCOS‑NII"
+  affiliation_link: "https://rcos.nii.ac.jp/en/"
+  country: "JN"
+  groups: ["SC"]
+  roles: ["member"]
+
+- name: "Alexander Schlemmer"
+  affiliation: "Indiscale"
+  affiliation_link: "https://www.indiscale.com/de/"
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Andreas Pfeil"
+  affiliation: "SCC KIT"
+  affiliation_link: https://www.scc.kit.edu/
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Anna Petschulies"
+  affiliation: "DIN"
+  affiliation_link: "https://www.din.de"
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Christine Kirkpatrick"
+  affiliation: "SDSC"
+  affiliation_link: "https://www.sdsc.edu/"
+  country: "US"
+  groups: ["SC","EC"]
+  roles: ["member"]
+
+- name: "Christopher Erdman"
+  affiliation: ""
+  affiliation_link:  
+  country: "US"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Claus Weiland"
+  affiliation: "Senckenberg Museum"
+  affiliation_link: "https://www.senckenberg.de/en/institutes/senckenberg-research-institute-natural-history-museum-frankfurt/" 
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Daan Broeder"
+  affiliation: "CLARIN"
+  affiliation_link: "https://www.clarin.eu"
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Erik Schultes"
+  affiliation: "GOFAIR"
+  affiliation_link: "https://www.go-fair.org"
+  country: "NL"
+  groups: ["SC","EC"]
+  roles: ["member"]
+
+- name: "Felix Bach"
+  affiliation: "FIZ"
+  affiliation_link: "https://www.fiz-karlsruhe.de/"
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "George Strawn"
+  affiliation: "Academy"
+  affiliation_link: 
+  country: "US"
+  groups: ["SC","EC","TSIG"]
+  roles: ["member"]
+
+- name: "Ivonne Anders"
+  affiliation: "DKRZ"
+  affiliation_link: "https://www.dkrz.de"
+  country: "DE"
+  groups: ["SC","TSIG"]
+  roles: ["chair"]
+
+- name: "Jana Böhm"
+  affiliation: "GWDG"
+  affiliation_link: "https://www.gwdg.de"
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Klaas Wieringa"
+  affiliation: "GEANT"
+  affiliation_link: "https://geant.org"
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Larry Lannom"
+  affiliation: "CNRI"
+  affiliation_link: "https://www.cnri.reston.va.us"
+  country: "US"
+  groups: ["SC","TSIG"]
+  roles: ["member"]
+
+- name: "Laura Biven"
+  affiliation: "Jefferson Lab"
+  affiliation_link: "https://www.jlab.org"
+  country: "US"
+  groups: ["SC","EC"]
+  roles: ["member"]
+
+- name: "Luis Sayao"
+  affiliation: "CNEN"
+  affiliation_link: ""
+  country: "BR"
+  groups: ["SC"]
+  roles: ["member"]
+
+- name: "Marco Kulücke"
+  affiliation: "DKRZ"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Jael Castro"
+  affiliation: "ZBMED"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Luiz Bonino"
+  affiliation: "U Twente"
+  affiliation_link: ""
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Margareta Hellström"
+  affiliation: "U Lund"
+  affiliation_link: ""
+  country: "SE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Mark van de Sanden"
+  affiliation: "SARA"
+  affiliation_link: ""
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Matt Buys"
+  affiliation: "Datacite"
+  affiliation_link: ""
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Miika Alonen"
+  affiliation: "CSC"
+  affiliation_link: ""
+  country: "FI"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Milan Ojstersek"
+  affiliation: "U Maribor"
+  affiliation_link: ""
+  country: "SI"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Nicolas Blumenröhr"
+  affiliation: "KIT"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Peter Wittenburg"
+  affiliation: "GWDG"
+  affiliation_link: "https://www.gwdg.de"
+  country: "DE"
+  groups: ["SC","EC","TSIG"]
+  roles: ["member"]
+
+- name: "Rosella Aversa (new)"
+  affiliation: "KIT"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["SC"]
+  roles: ["member"]
+
+- name: "Sara Elgebali"
+  affiliation: "Datacite"
+  affiliation_link: ""
+  country: "SE"
+  groups: ["SC"]
+  roles: ["member"]
+
+- name: "Stian Soiland‑Reyes"
+  affiliation: "U Manchester"
+  affiliation_link: ""
+  country: "UK"
+  groups: ["SC","TSIG"]
+  roles: ["member"]
+
+- name: "Sven Bingert"
+  affiliation: "GWDG"
+  affiliation_link: "https://www.gwdg.de"
+  country: "DE"
+  groups: ["SC","EC","TSIG"]
+  roles: ["member"]
+
+- name: "Tshiamo Motshegwa (New)"
+  affiliation: "NRF"
+  affiliation_link: ""
+  country: "SA"
+  groups: ["SC"]
+  roles: ["member"]
+
+- name: "Themis Zamani"
+  affiliation: "GRNET"
+  affiliation_link: ""
+  country: "GR"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Thomas Jejkal"
+  affiliation: "KIT"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Tibor Kalman"
+  affiliation: "GWDG"
+  affiliation_link: "https://www.gwdg.de"
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Ulrich Schwardmann"
+  affiliation: "–"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["SC","TSIG"]
+  roles: ["member"]
+
+- name: "Wouter Adding"
+  affiliation: "Naturalis"
+  affiliation_link: ""
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Yudong Zhang"
+  affiliation: "GESIS"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Zachary Trautt"
+  affiliation: "NIST"
+  affiliation_link: ""
+  country: "US"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Zeyd Boukhers"
+  affiliation: "FhG FIT"
+  affiliation_link: ""
+  country: "DE"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Robert Hanisch"
+  affiliation: "NIST"
+  affiliation_link: ""
+  country: "US"
+  groups: ["SC","TSIG"]
+  roles: ["member"]
+
+- name: "Robert Quick"
+  affiliation: "IU"
+  affiliation_link: ""
+  country: "US"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Sharif Islam"
+  affiliation: "Naturalis"
+  affiliation_link: ""
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Twan Goosen"
+  affiliation: "CLARIN"
+  affiliation_link: ""
+  country: "NL"
+  groups: ["TSIG"]
+  roles: ["member"]
+
+- name: "Sonja Sternkopf"
+  affiliation: "GWDG"
+  affiliation_link: "https://www.gwdg.de"
+  country: "DE"
+  groups: ["SC"]
+  roles: ["Secretariat"]
+
+- name: "Christophe Blanchi"
+  affiliation: "DONA"
+  affiliation_link: ""
+  country: "HS"
+  groups: ["SC","TSIG"]
+  roles: ["chair"]

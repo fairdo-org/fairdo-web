@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="single">
+
+  <!-- Page header -->
+  <header class="page-header {{ if .Params.image }}page-header--with-image{{ end }}"
+    {{ with .Params.image }}style="background-image:url('{{ . | relURL }}')"{{ end }}>
+    <div class="page-header__overlay"></div>
+    <div class="container page-header__content">
+      {{ with .Params.categories }}
+        <span class="page-header__tag">{{ index . 0 }}</span>
+      {{ end }}
+      <h1 class="page-header__title">{{ .Title }}</h1>
+      <div class="page-header__meta">
+        {{ if not .Date.IsZero }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+        {{ with .Params.author }}
+          <span class="page-header__author">by {{ . }}</span>
+        {{ end }}
+        {{ with .ReadingTime }}
+          <span>{{ . }} min read</span>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="container single__layout">
+    <div class="prose single__content">
+      {{ .Content }}
+    </div>
+
+    <!-- Sidebar (optional) -->
+    {{ if or .Params.toc .Site.Params.showRelated }}
+      <aside class="single__sidebar">
+        {{ if .Params.toc }}
+          <div class="toc">
+            <h4 class="toc__title">On this page</h4>
+            {{ .TableOfContents }}
+          </div>
+        {{ end }}
+      </aside>
+    {{ end }}
+  </div>
+
+</article>
+{{ end }}

@@ -1,0 +1,161 @@
+baseURL = "https://fairdo.org"
+languageCode = "en-us"
+title = "FDO Forum"
+theme = "fairdo"
+
+[params]
+  description  = "We build fair and open systems."
+  tagline      = "Advancing fairness, openness, and transparency in digital infrastructure."
+  logo         = "/images/logos/FAIRDOFORUM-logo.png"
+  favicon      = "/images/favicon.png"
+
+  [params.ctaButton]
+    label = "Get Involved"
+    url   = "/contact"
+
+#  [[params.social]]
+#    name = "Twitter"
+#    url  = "https://twitter.com/yourorg"
+#  [[params.social]]
+#    name = "LinkedIn"
+#    url  = "https://linkedin.com/company/yourorg"
+  [[params.social]]
+    name = "Zenodo"
+    url  = "https://zenodo.org/communities/fdoforum/"
+  [[params.social]]
+    name = "YouTube"
+    url  = "https://www.youtube.com/@fairdigitalobjectsforum1705"
+  [[params.social]]
+    name = "GitHub"
+    url  = "https://github.com/fairdo-org"
+
+[[menu.main]]
+  name   = "About"
+  url    = "/about"
+  weight = 10
+
+[[menu.main]]
+  name   = "Blog"
+  url    = "/blog"
+  weight = 30
+
+[[menu.main]]
+  name   = "Documents"
+  url    = "/documents/"
+  weight = 25
+
+[[menu.main]]
+  name   = "Bulletin"
+  url    = "/documents/fdo_bulletins"
+  parent = "Documents"
+  weight = 20
+
+[[menu.main]]
+  name   = "Papers"
+  url    = "/documents/fdo_papers"
+  parent = "Documents"
+  weight = 20
+
+[[menu.main]]
+  name   = "Specifications"
+  url    = "/documents/fdo_specifications"
+  parent = "Documents"
+  weight = 20
+
+[[menu.main]]
+  name   = "Events"
+  url    = "/events/"
+  weight = 20
+
+[[menu.main]]
+  name   = "FDO Conferences"
+  url    = "/events/conferences"
+  parent = "Events"
+  weight = 20
+
+
+[[menu.main]]
+  name   = "Organisation"
+  url    = "/organisation/"
+  weight = 20
+
+[[menu.main]]
+  name   = "Steering Committee"
+  url    = "/steering-committee"
+  parent = "Organisation"
+  weight = 1
+
+[[menu.main]]
+  name   = "Excutive Committee"
+  url    = "/co-chairs-group"
+  parent = "Organisation"
+  weight = 2
+
+[[menu.main]]
+  name   = "Working Groups"
+  url    = "/organisation/fdof-wg"
+  parent = "Organisation"
+  weight = 3
+
+[[menu.footer]]
+  name   = "Organisation"
+  weight = 10
+
+[[menu.footer]]
+  name   = "About Us"
+  url    = "/about"
+  parent = "Organisation"
+
+[[menu.footer]]
+  name   = "Members"
+  url    = "/members"
+  parent = "Organisation"
+
+#[[menu.footer]]
+#  name   = "Careers"
+#  url    = "/careers"
+#  parent = "Organisation"
+
+[[menu.footer]]
+  name   = "Resources"
+  weight = 20
+
+[[menu.footer]]
+  name   = "Blog"
+  url    = "/blog"
+  parent = "Resources"
+
+[[menu.footer]]
+  name   = "Publications"
+  url    = "/documents/fdo_papers"
+  parent = "Resources"
+
+[[menu.footer]]
+  name   = "Community"
+  weight = 30
+
+[[menu.footer]]
+  name   = "Contact"
+  url    = "/contact"
+  parent = "Community"
+
+[[menu.footer]]
+  name   = "Events"
+  url    = "/events"
+  parent = "Community"
+
+[[menu.legal]]
+  name = "Privacy Policy"
+  url  = "/privacy"
+
+[[menu.legal]]
+  name = "Imprint"
+  url  = "/imprint"
+
+[taxonomies]
+
+[[ menu.main ]]
+  name   = "All Members"
+  url    = "/members"
+  weight = 35
+  parent = "Organisation"

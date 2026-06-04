@@ -1,0 +1,21 @@
+# Hugo generated files - never commit these
+/public/
+/resources/
+
+# Hugo build lock file
+.hugo_build.lock
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local

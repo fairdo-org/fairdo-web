@@ -1,0 +1,88 @@
+{{/* -----------------------------------------------------------------
+Shortcode: members
+Usage:
+{{< members>}} – shows *all* members
+  {{< members group="SC">}} – shows only members that have the role “Chair”
+    ----------------------------------------------------------------- */}}
+
+    {{/* -----------------------------------------------------------------
+    Load the data file (the same file you already use for the
+    full‑page version)
+    ----------------------------------------------------------------- */}}
+
+    {{ $allMembers := .Site.Data.members }}
+
+    {{/* -----------------------------------------------------------------
+    Optional filter by role (passed as a parameter)
+    ----------------------------------------------------------------- */}}
+
+    {{ $groupParam := .Get "group" }}
+    {{ $members := $allMembers }}
+
+    {{ if $groupParam }}
+    {{/* Keep only those members whose `roles` slice contains the requested role */}}
+    {{ $members = where $allMembers "groups" "intersect" (slice $groupParam) }}
+    {{ end }}
+
+    {{/* If there are no members after filtering, show a friendly messag */}}
+
+    {{ if not $members }}
+    <p class="text-center" style="color: var(--color-muted);">
+      No members found{{ if $groupParam }} with the group “{{ .Get "group" }}”{{ end }}.
+    </p>
+    {{ else }}
+
+    <div class="members-grid">
+      {{ range $members }}
+      <div class="member-card" data-name="{{ .name | lower }}" data-affiliation="{{ .affiliation | lower }}"
+        data-country="{{ .country | lower }}" data-roles="{{ delimit .roles " , " | lower }}">
+        <div>
+        <!-- Avatar (fallback to initials) -->
+        <div class="member-card__avatar">
+          {{ if .image }}
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+          <span class="member-card__initials" style="display:none;">
+            {{ range split .name " " }}{{ substr . 0 1 }}{{ end }}
+          </span>
+          {{ else }}
+          <span class="member-card__initials">
+            {{ range split .name " " }}{{ substr . 0 1 }}{{ end }}
+          </span>
+          {{ end }}
+        </div>
+
+        {{$roles := .roles}}
+        {{ if $roles }}
+        <div class="member-card__roles-under-avatar">
+          {{ range $roles }}
+          <span class="member-card__badge">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+</div>
+        <!-- Info -->
+        <div class="member-card__info">
+          <h3 class="member-card__name">{{ .name }}</h3>
+
+
+          <p class="member-card__affiliation">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            {{ $link := .affiliation_link | default "" }}
+            {{ if $link }}
+            <a href="{{ $link }}" target="_blank" rel="noopener" class="member-card__affiliation-link">
+              {{ .affiliation }}
+            </a>
+            {{ else }}
+            {{ .affiliation }}
+            {{ end }} ; <span class="member-card__flag">{{ .flag }}</span>
+            {{ .country }}
+          </p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ end }}

@@ -1,0 +1,171 @@
+{{ define "main" }}
+
+  {{/* Hero */}}
+  {{ partial "hero.html" . }}
+
+  {{/* Render page sections from front matter */}}
+  {{ with .Params.sections }}
+    {{ range . }}
+      {{ $type := .type | default "text" }}
+
+      {{/* ── Features / Cards ── */}}
+      {{ if eq $type "features" }}
+        <section class="section section--features {{ if .dark }}section--dark{{ end }}">
+          <div class="container">
+            {{ with .eyebrow }}<span class="section__eyebrow">{{ . }}</span>{{ end }}
+            {{ with .title }}<h2 class="section__title">{{ . | markdownify }}</h2>{{ end }}
+            {{ with .subtitle }}<p class="section__subtitle">{{ . | markdownify }}</p>{{ end }}
+            <div class="cards cards--{{ .columns | default 3 }}">
+              {{ range .items }}
+                <div class="card">
+                  {{ with .icon }}
+                    <div class="card__icon">
+                      <img src="{{ . | relURL }}" alt="" />
+                    </div>
+                  {{ end }}
+                  {{ with .emoji }}
+                    <div class="card__emoji">{{ . }}</div>
+                  {{ end }}
+                  <h3 class="card__title">{{ .title }}</h3>
+                  {{ with .text }}<p class="card__text">{{ . | markdownify }}</p>{{ end }}
+                  {{ with .link }}
+                    <a href="{{ .url }}" class="card__link">{{ .label }} →</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+
+      {{/* ── Text + Image ── */}}
+      {{ else if eq $type "split" }}
+        <section class="section section--split {{ if .dark }}section--dark{{ end }} {{ if .reverse }}section--reverse{{ end }}">
+          <div class="container">
+            <div class="split">
+              <div class="split__text">
+                {{ with .eyebrow }}<span class="section__eyebrow">{{ . }}</span>{{ end }}
+                <h2 class="split__title">{{ .title | markdownify }}</h2>
+                {{ with .text }}<div class="split__body">{{ . | markdownify }}</div>{{ end }}
+                {{ with .button }}
+                  <a href="{{ .url }}" class="btn btn--primary">{{ .label }}</a>
+                {{ end }}
+              </div>
+              {{ with .image }}
+                <div class="split__media">
+                  <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="split__img" loading="lazy" />
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+
+      {{/* ── Stats / Numbers ── */}}
+      {{ else if eq $type "stats" }}
+        <section class="section section--stats {{ if .dark }}section--dark{{ end }}">
+          <div class="container">
+            {{ with .title }}<h2 class="section__title">{{ . | markdownify }}</h2>{{ end }}
+            <div class="stats">
+              {{ range .items }}
+                <div class="stat">
+                  <span class="stat__number">{{ .number }}</span>
+                  <span class="stat__label">{{ .label }}</span>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+
+      {{/* ── Logos / Partners ── */}}
+      {{ else if eq $type "logos" }}
+        <section class="section section--logos">
+          <div class="container">
+            {{ with .title }}<p class="logos__title">{{ . }}</p>{{ end }}
+            <div class="logos__grid">
+              {{ range .items }}
+                <a href="{{ .url | default '#' }}" class="logos__item" target="_blank" rel="noopener">
+                  <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" />
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+
+      {{/* ── CTA Banner ── */}}
+      {{ else if eq $type "cta" }}
+        <section class="section section--cta">
+          <div class="container">
+            <div class="cta-banner">
+              <div class="cta-banner__text">
+                <h2 class="cta-banner__title">{{ .title | markdownify }}</h2>
+                {{ with .text }}<p class="cta-banner__body">{{ . | markdownify }}</p>{{ end }}
+              </div>
+              <div class="cta-banner__actions">
+                {{ with .primaryButton }}
+                  <a href="{{ .url }}" class="btn btn--primary btn--lg">{{ .label }}</a>
+                {{ end }}
+                {{ with .secondaryButton }}
+                  <a href="{{ .url }}" class="btn btn--outline-light btn--lg">{{ .label }}</a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </section>
+
+      {{/* ── Recent Posts ── */}}
+      {{ else if eq $type "posts" }}
+        <section class="section">
+          <div class="container">
+            {{ with .title }}<h2 class="section__title">{{ . }}</h2>{{ end }}
+            <div class="cards cards--3">
+              {{ $posts := where $.Site.RegularPages "Section" (.section | default "blog") }}
+              {{ range first (.count | default 3) $posts }}
+                <article class="card card--post">
+                  {{ with .Params.image }}
+                    <a href="{{ $.RelPermalink }}" class="card__img-wrap">
+                      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" class="card__img" />
+                    </a>
+                  {{ end }}
+                  <div class="card__body">
+                    {{ with .Params.categories }}
+                      <span class="card__tag">{{ index . 0 }}</span>
+                    {{ end }}
+                    <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p class="card__text">{{ .Summary | truncate 120 }}</p>
+                    <div class="card__meta">
+                      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+                    </div>
+                  </div>
+                </article>
+              {{ end }}
+            </div>
+            {{ with .link }}
+              <div class="section__more">
+                <a href="{{ .url }}" class="btn btn--outline">{{ .label }}</a>
+              </div>
+            {{ end }}
+          </div>
+        </section>
+
+      {{/* ── Plain content block ── */}}
+      {{ else if eq $type "content" }}
+        <section class="section {{ if .dark }}section--dark{{ end }}">
+          <div class="container container--narrow">
+            {{ with .title }}<h2 class="section__title">{{ . | markdownify }}</h2>{{ end }}
+            {{ with .text }}<div class="prose">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        </section>
+
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Page body content (if any markdown below front matter) */}}
+  {{ if .Content }}
+    <section class="section">
+      <div class="container container--narrow prose">
+        {{ .Content }}
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}
