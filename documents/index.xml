@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documents on FDO Forum</title><link>https://fairdo.org/documents/</link><description>Recent content in Documents on FDO Forum</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://fairdo.org/documents/index.xml" rel="self" type="application/rss+xml"/><item><title>FDO Bulletins</title><link>https://fairdo.org/documents/fdo_bulletins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo.org/documents/fdo_bulletins/</guid><description>&lt;h2 id="fdo-forum-bulletins"&gt;FDO Forum Bulletins&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documents on FDO Forum</title><link>https://fairdo-org.github.io/fairdo-web/documents/</link><description>Recent content in Documents on FDO Forum</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://fairdo-org.github.io/fairdo-web/documents/index.xml" rel="self" type="application/rss+xml"/><item><title>FDO Bulletins</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</guid><description>&lt;h2 id="fdo-forum-bulletins"&gt;FDO Forum Bulletins&lt;/h2&gt;
 &lt;p&gt;The FDO Forum publishes regular bulletins to keep the community informed about
 new developments, working group updates, events, and publications related to
 FAIR Digital Objects.&lt;/p&gt;
@@ -110,7 +110,7 @@ FAIR Digital Objects.&lt;/p&gt;
 &lt;/table&gt;
 &lt;h2 id="stay-informed"&gt;Stay Informed&lt;/h2&gt;
 &lt;p&gt;To receive future bulletins directly in your inbox, sign up for the FDO Forum
-mailing list or follow us on our social media channels.&lt;/p&gt;</description></item><item><title>FDO Papers</title><link>https://fairdo.org/documents/fdo_papers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo.org/documents/fdo_papers/</guid><description>&lt;h2 id="references"&gt;References&lt;/h2&gt;
+mailing list or follow us on our social media channels.&lt;/p&gt;</description></item><item><title>FDO Papers</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/</guid><description>&lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;p&gt;A curated list of foundational papers, reports, and specifications that underpin the theory and practice of FAIR Digital Objects.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="2006"&gt;2006&lt;/h3&gt;
@@ -128,7 +128,7 @@ Berg-Cross, G., Ritz, R., &amp;amp; Wittenburg, P. (2015)
 &lt;p&gt;&lt;strong&gt;Automated schema extraction for PID information types&lt;/strong&gt;
 Schwardmann, U. (2016)
 &lt;em&gt;2016 IEEE International Conference on Big Data (Big Data), 3036–3044&lt;/em&gt;
-&lt;a href="https://doi.org/10.1109/BigData.2016.7840957"&gt;https://doi.org/10.1109/BigData.2016.7840957&lt;/a&gt;&lt;/p&gt;</description></item><item><title>FDO Specifications</title><link>https://fairdo.org/documents/fdo_specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo.org/documents/fdo_specifications/</guid><description>&lt;p&gt;&lt;strong&gt;UPDATE 2026&lt;/strong&gt;: A new formal specification is currently developed here&lt;/p&gt;
+&lt;a href="https://doi.org/10.1109/BigData.2016.7840957"&gt;https://doi.org/10.1109/BigData.2016.7840957&lt;/a&gt;&lt;/p&gt;</description></item><item><title>FDO Specifications</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_specifications/</guid><description>&lt;p&gt;&lt;strong&gt;UPDATE 2026&lt;/strong&gt;: A new formal specification is currently developed here&lt;/p&gt;
 &lt;p&gt;The following table includes all official documents on FDOs which the FDO Forum has released. All documents followed the official process as ligned out in the FDO Process Document. The first documents describe the core requirement specifications of the FDOs, while the others explain some details to better understand FDOs. The most Important documents are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;FDO Requirement specifications – a comprehensive list of FDO specifications endorsed by the FDOF&lt;/li&gt;
