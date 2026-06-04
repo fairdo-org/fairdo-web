@@ -9,10 +9,10 @@ hero:
   image: "/images/hero-bg.jpg"
   primaryButton:
     label: "Explore our work"
-    url: "/projects"
+    url: "documents"
   secondaryButton:
     label: "Get Involved"
-    url: "/get-involved"
+    url: "contact"
 
 sections:
 
