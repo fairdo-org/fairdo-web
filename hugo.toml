@@ -20,6 +20,7 @@ theme = "fairdo"
 #  [[params.social]]
 #    name = "LinkedIn"
 #    url  = "https://linkedin.com/company/yourorg"
+
   [[params.social]]
     name = "Zenodo"
     url  = "https://zenodo.org/communities/fdoforum/"
@@ -69,11 +70,22 @@ theme = "fairdo"
   weight = 20
 
 [[menu.main]]
-  name   = "FDO Conferences"
+  name   = "Conferences"
   url    = "/events/conferences"
   parent = "Events"
-  weight = 20
+  weight = 21
 
+[[menu.main]]
+  name   = "Calendar"
+  url    = "/events/calendar/"
+  parent = "Events"
+  weight = 22
+
+[[menu.main]]
+  name   = "Our Events"
+  url    = "/events/events/"
+  parent = "Events"
+  weight = 23
 
 [[menu.main]]
   name   = "Organisation"
