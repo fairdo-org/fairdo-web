@@ -55,7 +55,7 @@ sections:
     eyebrow: "Our mission"
     title: "Shaping an open, equitable digital future "
     text: "Since 2018, we have collaborated with researchers, institutions, policymakers, and civil society to advance principles of openness, fairness, and transparency in digital infrastructure."
-    image: "/images/team-photo.jpg"
+    image: "images/grafik-daten-768x704.png"
     button:
       label: "About us"
       url: "/about"
