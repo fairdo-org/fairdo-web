@@ -37,6 +37,18 @@ theme = "fairdo"
   weight = 10
 
 [[menu.main]]
+  name   = "FDOF Phase I"
+  url    = "/about/fdof_phase1"
+  parent =  "About"
+  weight = 10
+
+[[menu.main]]
+  name   = "FDOF Phase II"
+  url    = "/about/fdof_phase2"
+  parent =  "About"
+  weight = 10
+
+[[menu.main]]
   name   = "Blog"
   url    = "/blog"
   weight = 30
