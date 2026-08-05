@@ -83,10 +83,10 @@ theme = "fairdo"
   weight = 20
 
 [[menu.main]]
-  name   = "FDOF Code of Conduct"
+  name   = "Code of Conduct"
   url    = "/documents/fdo_code_of_conduct"
   parent = "Documents"
-  weight = 20
+  weight = 10
 
 [[menu.main]]
   name   = "Events"
