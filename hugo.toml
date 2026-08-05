@@ -134,6 +134,11 @@ theme = "fairdo"
   parent = "Organisation"
   weight = 3
 
+[[menu.main]]
+  name   = "FAQ"
+  url    = "/faq"
+  weight = 40
+
 [[menu.footer]]
   name   = "Organisation"
   weight = 10
