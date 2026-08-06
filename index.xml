@@ -111,9 +111,9 @@ across research, data, and digital systems.&lt;/p&gt;
  &lt;/div&gt;
 
  &lt;div class="faq-answer"&gt;
- &lt;p&gt;An FDO is a standardised, persistent bundle of information about a digital object, ensuring the FAIR reusability of its bit sequence, which may represent data, metadata, software, and so on.&lt;/p&gt;
-&lt;p&gt;It is machine-actionable and is identified by a unique, resolvable PID. The PID resolves to a structured FDO record containing registered attributes.&lt;/p&gt;
-&lt;p&gt;The record requires only a few mandatory fields, currently the FDO profile and type, while allowing community-specific attributes.&lt;/p&gt;</description></item><item><title>FDO Bulletins</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</guid><description>&lt;h2 id="fdo-forum-bulletins"&gt;FDO Forum Bulletins&lt;/h2&gt;
+ &lt;p&gt;An FDO is a standardised, persistent bundle of information about a digital object, ensuring the FAIR reusability of its bit sequence, which may represent data, metadata, software, and so on.
+It is machine-actionable and is identified by a unique, resolvable PID. The PID resolves to a structured FDO record containing registered attributes.
+The record requires only a few mandatory fields, currently the FDO profile and type, while allowing community-specific attributes.&lt;/p&gt;</description></item><item><title>FDO Bulletins</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</guid><description>&lt;h2 id="fdo-forum-bulletins"&gt;FDO Forum Bulletins&lt;/h2&gt;
 &lt;p&gt;The FDO Forum publishes regular bulletins to keep the community informed about
 new developments, working group updates, events, and publications related to
 FAIR Digital Objects.&lt;/p&gt;
