@@ -4,18 +4,16 @@
     role="button"
     tabindex="0"
     onclick="this.parentElement.classList.toggle('open')"
-    onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.parentElement.classList.toggle('open') }"
+    onkeydown="if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      this.parentElement.classList.toggle('open');
+    }"
   >
-    <span class="question-text">
-      {{ .Get "question" }}
-    </span>
-
+    <span class="question-text">{{ .Get "question" }}</span>
     <span class="icon" aria-hidden="true">+</span>
   </div>
 
   <div class="faq-answer">
-    {{ with .Get "answer" }}
-      {{ . | markdownify }}
-    {{ end }}
+    {{ .Inner | markdownify }}
   </div>
 </div>
