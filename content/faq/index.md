@@ -65,4 +65,224 @@ Once set up, the same FDO profile and template can be reused for multiple files.
 
   {{< /faq-item >}}
 
+  {{< faq-item question="Are there other FDO Configuration Types?" >}}
+
+  
+Yes, there are several other configurations beyond Data FDOs, which illustrates the flexibility of FDOs. These configurations are illustrative, not normative, and reflect diverse use cases.
+
+1. Collection FDOs: A single FDO references multiple data or metadata FDOs (e.g., a dataset bundle). It doesn't contain bit sequences itself, but rather links to them via PIDs. This is useful for managing complex objects, such as a research project with multiple files.
+
+2. RO-Crate FDOs
+An FDO points to an RO-Crate metadata file (e.g., JSON-LD) that describes external resources. The FDO record includes a reference to the RO-Crate, enabling rich, standardized metadata packaging.
+
+3. Query FDOs: An FDO references a database query (e.g., SQL) rather than raw data. The actual data is dynamically retrieved by executing the query. It is not a data FDO because it points to an executable operation.
+
+4. Nanopublication FDOs
+FDOs are used to represent semantic assertions or scientific claims (nanopublications). The FDO links to a structured assertion with provenance, evidence, and claim.
+
+These configurations demonstrate that FDOs are not limited to data files; they can also represent collections, queries, metadata packages, and assertions. This enables the creation of flexible, FAIR-compliant digital objects.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Can FDOs be associated with operations?" >}}
+
+Core FDOs are passive and do not inherently include operations. However, operations can be linked to FDOs or FDO types in flexible ways, as defined in the FDO Operations document.
+
+Operation registries can be created by anyone (e.g., individuals or communities) to map FDO types to specific operations. These registries are external to core FDOs and are not standardized by FDOF.
+Operations themselves can be FDOs. For example, an FDO could describe a data processing task.
+Linking is done via references in the FDO record or registry entries.
+
+**Key points:**  
+- Operations can only run if the user has the proper access rights, which are based on the rights metadata in the FDO.  
+Access to registries or operations may be restricted.  
+- Registries may specify where operations should be executed.  
+- The FDO does not define the format or behavior of operation registries.
+
+When operations are attached, FDOs become active, similar to methods in object-oriented programming (OOP). This creates dynamic, executable digital objects while maintaining FAIR principles.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="What is special for Active FDOs?" >}}
+
+Active FDOs extend the FDO concept by integrating operations and turning them into autonomous, self-contained entities that can communicate with other aFDOs.
+
+**Key features:**
+Built-in operations registry: It defines which operations or workflows execute in response to specific events.
+Event-driven behavior: They react autonomously to standardized events received via Service Access Points (SAPs).
+Standardized communication: Events follow a fixed format, and actions are triggered based on event type and trust checks.
+Workflow (as per diagram):
+Trust check: The target aFDO verifies the sender’s credentials.
+Event acceptance: Decide whether to process the event.
+Execution: Runs defined operations or workflows.
+Response: Sends feedback (accept or reject) back to the source.
+Each aFDO maintains its own state and event list and exposes its capabilities externally.
+
+**Scenarios:**
+Closed: Predefined trust relationships (e.g., partner agreements). Known sources and reduced risk.
+Open: Unknown aFDOs may send events, presenting higher security challenges. This requires robust trust and security frameworks inspired by WoT and Dataspace architectures.
+aFDOs differ from standard FDOs in that they:
+- Tight integration of operations
+- Autonomous, event-driven behavior
+- Built-in trust and security checks
+
+They enable dynamic, intelligent digital objects that can collaborate like agents in a decentralized system.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="What about the relation between FDOs and Metadata?" >}}
+
+FDO records include metadata, called Kernel Attributes (KAs), that describe the bit sequence. However, they are not intended to replace community-specific metadata schemas.
+
+**Key Principles:** 
+- FDOs reference, don't replace: FDOs link to rich, domain-specific metadata (e.g., scientific, rights, technical) using persistent references, rather than embedding them directly.  
+- Kernel Attributes (KAs): Only a minimal, mandatory set is defined (e.g., FDO_Type, FDO_Profile_Ref) to ensure machine actionability and predictability.  
+- Extensibility: Repositories may add more KAs, but they must be:  
+  a. Defined and openly registered  
+  b. Explicitly referenced in the FDO profile.  
+- FDO profile requirement: Every FDO record must be governed by an FDO profile that lists all expected KAs and points to their definitions.
+
+**Best Practices for Linked Metadata:**  
+- External metadata should be FAIR.  
+  a. The schema must be explicit (preferably expressed as RDF triples).  
+  Concepts and vocabularies should be registered in open, shared registries (e.g., community-driven or widely adopted semantic profiles).  
+- Avoid embedding large metadata sets in FDO records. Use separate, community-driven metadata instead.
+
+Bottom line: FDOs provide a lightweight, standardized way to reference rich metadata, not replace it. This keeps FDOs simple, interoperable, and aligned with existing community practices.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Are Nanopublications FDOs?" >}}
+
+The format has evolved to include not only single statements, but also datasets, workflows, reviews, social annotations, and all types of statements related to the domain, meta, and social levels. Over the last decade, a decentralized ecosystem has emerged, providing services such as publication, authentication, timestamping, persistent identifiers, storage, and search across the growing nanopublication network.
+Recent analyses demonstrate that properly designed nanopublications — those that describe a digital object type, its location, and its provenance or context — fulfill the FAIR digital object requirement specifications. This enables their deployment as general-purpose FDO implementations. 
+
+For more information, look here:
+
+[Mass Spectrometry Laboratory:](https://nanodash.knowledgepixels.com/project?id=https://w3id.org/kpxl/custom/project/terms/LEIbits)
+
+[Data Stewardship More Generally:](https://nanodash.knowledgepixels.com/project?id=https://w3id.org/kpxl/custom/project/terms/LEIbits)
+
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Are DCAT and FDOs the same?" >}}
+No, DCAT and FDO are different. 
+
+DCAT is neither an FDO nor an FDO implementation. It is an RDF-based metadata vocabulary that aims to improve interoperability across data catalogs. As a standard controlled vocabulary, DCAT categories can be included in FDO profiles or in the metadata descriptions used by providers to describe the bit sequence included in an FDO. The following table compares FDOs and DCAT.
+An FDO is a standardized and persistent bundle of all information about a digital object that is important for all FAIR aspects of reusing the included bit sequence.
+A bit sequence can encode digital information, such as data, metadata, configurations, semantic assertions, and software.	DCAT is a metadata standard and a controlled vocabulary. It allows publishers to describe datasets. Such a description may or may not include a pointer to the bit sequence.
+DCAT focuses on datasets, but it also supports other research artifacts via dcat:Resource, which extends dcat:Dataset.
+An FDO is a bundle that complies with the FAIR principles, i.e., it is machine-actionable.	As an RDF controlled vocabulary, DCAT complies with the FAIR principles and is machine-actionable.
+A bundle that is referred to by a global, unique, resolvable, and persistent identifier (PID). Any dcat:Resource can have an identifier. If present, it is not mandatory for it to be a PID.
+In its basic form, a dcat:Resource is a passive entity; however, many FDO implementations link operations with FDOs. 
+
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Do FDOs increase Interoperability?" >}}
+
+Data interoperability involves the meaningful use of data from diverse sources and formats, which is achieved through shared standards, formats, vocabularies, and protocols.
+The EU Data Act outlines four key layers:
+1) Clear, machine-readable descriptions of data content, quality, licensing, and methodology; 2) publicly available, consistent data structures, vocabularies, and classifications; 3) machine-accessible APIs with defined terms of use and service quality (e.g., real-time, bulk); and 4) tools for automating data sharing (e.g., smart contracts).
+FDOs address core interoperability by:
+- Bundling schema and vocabulary references to ensure that the syntactic and semantic context is always available
+- Providing a unified access model, which is a consistent way to identify, access, and interact with data and metadata regardless of the repository, technology, or data structure
+
+Like the TCP/IP protocol for network communication, FDOs offer a common protocol layer for digital objects, enabling seamless, machine-actionable interoperability across diverse systems and data spaces.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Do FDOs increase data security?" >}}
+
+FDOs, Security & Data Sovereignty (Shortened)
+FAIR DO specifications don’t prescribe security mechanisms, but emphasize including access rights in FDOs — critical for trust in data sharing, especially with AI.
+Data sovereignty means having control over who collects, stores, shares, and uses data, which is governed by policies and rights metadata.
+FDOs enhance sovereignty by:
+- Bundling rights metadata with the FDO via PID
+- Persistently linking data, metadata, and access rules, independent of context
+- Using a secure PID system to protect FDO records from tampering or unauthorized access
+
+Three security realms:
+PID System – Critical: It must ensure integrity, confidentiality, and persistence. It is hosted by a trusted, independent agency.
+Registries (FDO profiles and types): Less critical. Need availability and basic security, not high-level protection.
+Data repositories are critical. They must secure stored bit sequences (data, metadata, and software) with appropriate access controls.
+FDOs do not enforce security but provide a framework to securely bind rights and data — enabling trust, sovereignty, and scalable, FAIR data sharing.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Do FDOs offer a fundamentally different approach to data security?" >}}
+
+FDOs embed rights and reuse conditions directly into data objects tied to a single, persistent PID managed by a trusted entity. This ensures integrity and traceability.
+To strengthen security, FDOs can be designed so that:
+- Access requires resolving the PID to rights metadata first.
+- Usage is checked against owner-defined policies.
+- A secure token is issued for authorized access.
+
+This enables controlled, auditable reuse, even restricting execution to approved software, and prevents unauthorized copying while ensuring data sovereignty.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Does FDOF have recommendations to improve data security?" >}}
+
+There are several ways to increase data security using FDOs.
+One option is to add a checksum to your FDO record. This allows you to check the identity, authenticity, and integrity of the data. It can also be used to detect duplicates.
+If necessary, restrict access to the data referenced in the FDO record. Access could then be restricted to certain identities. You could also use encapsulation by operation, meaning the provider forces users to use specific software to access the data.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Are GIDS and Dataspaces the same?" >}}
+
+The term "Global Integrated Dataspace (GIDS)" refers to a domain of autonomous, persistent FAIR digital objects (FDOs) that contain all the necessary information—data, metadata, and rights—for machine-actionable reuse.  
+
+However, "dataspace" is used differently.  
+- EU/IDSA: It often implies a governed, closed environment for trusted, sovereign data sharing (e.g., industrial dataspaces).  
+- Broader view (IDSA WG): A shared domain with common rules and technology to enable data sharing, which is not necessarily closed.  
+
+FDOs are foundational building blocks for dataspaces.  
+- Core FDOs are passive and do not interpret rights.  
+With FDO operations, rights can be enforced, enabling usage control.  
+
+FDOs are technology-agnostic and support both open and closed dataspaces. They provide the FAIR, persistent, self-contained object at the heart of any dataspace.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Do FDOs require some governance?" >}}
+
+Since rules need to be maintained and they narrow the degree of freedom in solution building, agreeing to some governance is costly. Therefore, the impact of governance should be minimal. A global agreement on using FDOs to organize data requires minimal governance agreements.
+The FDO standard must be maintained and further developed.
+A few registries must be created to build an FDO infrastructure.
+To organize this, some form of lean global organization must be maintained. Currently, the FDO Forum performs this work without external funding, and the DONA Foundation ensures the availability of the secure, global PID system.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="Are FDOs the same as Data Products?" >}}
+
+Data refers to any meaningful digital representation, including metadata.
+According to the DSSC, data products are standardized, consumable packages of data and services with machine-readable descriptions and policies.
+FDOs go further.
+They explicitly bundle data, metadata, rights, and software; require a persistent PID for identification; and enforce strict, standardized bundling for FAIR reuse. While data products are flexible, FDOs provide a rigorous, machine-actionable foundation, making them ideal for implementing data products with guaranteed interoperability and traceability.
+
+  {{< /faq-item >}}
+
+ {{< faq-item question="What is the relation between FDO and IoT?" >}}
+
+A Thing (T) is a physical or virtual entity with a standardized Thing Description (TD), which enables machine-readable interaction. A Thing can act as a client or server, support lifecycle phases, and use W3C Web of Things (WoT) standards, such as JSON-LD, REST, and protocol bindings.  
+
+**Comparison with FDOs:**  
+Things are device-centric, protocol-flexible, and evolve dynamically.  
+Active FDOs (aFDOs) are similar in that they are autonomous, operation-enabled, and security-aware.  
+Both rely on trusted identities, encryption, and access control.  
+WoT's work on security, profiles, and interoperability offers valuable lessons for aFDO design.  
+
+FDOs and Things share goals, but FDOs offer a more standardized, persistent, and FAIR-focused approach to digital objects, including data, metadata, and software.
+
+  {{< /faq-item >}}
+
+ <!--{{< faq-item question="QUESTION" >}}
+
+Put Answere here.
+
+  {{< /faq-item >}} --->
+
+
 {{< /faq >}}
