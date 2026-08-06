@@ -53,16 +53,48 @@
 
 /* Antwort */
 .faq-answer {
-  padding: 0 1.5rem;
   max-height: 0;
+  padding: 0 1.5rem;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
   background-color: #ffffff;
+
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
 }
 
 .faq-item.open .faq-answer {
-  max-height: 300px;
-  padding: 1.2rem 1.5rem;
+  /*
+   * Maximale Höhe der geöffneten Antwortbox.
+   * Längere Inhalte werden innerhalb der Box gescrollt.
+   */
+  max-height: 24rem;
+  padding: 1.25rem 1.5rem;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* Scrollbuton */
+.faq-answer {
+  scrollbar-width: thin;
+  scrollbar-color: #b8c4d0 transparent;
+}
+
+.faq-answer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.faq-answer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.faq-answer::-webkit-scrollbar-thumb {
+  background-color: #b8c4d0;
+  border-radius: 999px;
+}
+
+.faq-answer::-webkit-scrollbar-thumb:hover {
+  background-color: #7f91a3;
 }
 
 /* Responsive */

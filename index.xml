@@ -101,90 +101,19 @@ across research, data, and digital systems.&lt;/p&gt;
  role="button"
  tabindex="0"
  onclick="this.parentElement.classList.toggle('open')"
- onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.parentElement.classList.toggle('open') }"
+ onkeydown="if (event.key === 'Enter' || event.key === ' ') {
+ event.preventDefault();
+ this.parentElement.classList.toggle('open');
+ }"
  &gt;
- &lt;span class="question-text"&gt;
- Wie kann ich mich anmelden?
- &lt;/span&gt;
- 
+ &lt;span class="question-text"&gt;What is an FDO?&lt;/span&gt;
  &lt;span class="icon" aria-hidden="true"&gt;+&lt;/span&gt;
  &lt;/div&gt;
- 
+
  &lt;div class="faq-answer"&gt;
- 
- Du kannst dich über das Menü oben rechts auf der Seite anmelden. Klicke auf &amp;lsquo;Anmelden&amp;rsquo; und gib deine E-Mail-Adresse ein. Danach erhältst du einen Bestätigungslink.
- 
- &lt;/div&gt;
- &lt;/div&gt;
-
- &lt;div class="faq-item"&gt;
- &lt;div
- class="faq-question"
- role="button"
- tabindex="0"
- onclick="this.parentElement.classList.toggle('open')"
- onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.parentElement.classList.toggle('open') }"
- &gt;
- &lt;span class="question-text"&gt;
- Was kostet die Nutzung?
- &lt;/span&gt;
- 
- &lt;span class="icon" aria-hidden="true"&gt;+&lt;/span&gt;
- &lt;/div&gt;
- 
- &lt;div class="faq-answer"&gt;
- 
- Die Nutzung unserer Plattform ist für alle Nutzer kostenlos. Premium-Funktionen sind optional und kostenpflichtig.
- 
- &lt;/div&gt;
- &lt;/div&gt;
-
- &lt;div class="faq-item"&gt;
- &lt;div
- class="faq-question"
- role="button"
- tabindex="0"
- onclick="this.parentElement.classList.toggle('open')"
- onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.parentElement.classList.toggle('open') }"
- &gt;
- &lt;span class="question-text"&gt;
- Wie lange dauert die Bearbeitung einer Anfrage?
- &lt;/span&gt;
- 
- &lt;span class="icon" aria-hidden="true"&gt;+&lt;/span&gt;
- &lt;/div&gt;
- 
- &lt;div class="faq-answer"&gt;
- 
- Die Bearbeitung dauert in der Regel 24–48 Stunden.
- 
- &lt;/div&gt;
- &lt;/div&gt;
-
- &lt;div class="faq-item"&gt;
- &lt;div
- class="faq-question"
- role="button"
- tabindex="0"
- onclick="this.parentElement.classList.toggle('open')"
- onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.parentElement.classList.toggle('open') }"
- &gt;
- &lt;span class="question-text"&gt;
- Kann ich meine Daten löschen?
- &lt;/span&gt;
- 
- &lt;span class="icon" aria-hidden="true"&gt;+&lt;/span&gt;
- &lt;/div&gt;
- 
- &lt;div class="faq-answer"&gt;
- 
- Ja, du kannst jederzeit dein Konto und deine Daten löschen.
- 
- &lt;/div&gt;
- &lt;/div&gt;
-
-
-&lt;/div&gt;</description></item><item><title>FDO Bulletins</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</guid><description>&lt;h2 id="fdo-forum-bulletins"&gt;FDO Forum Bulletins&lt;/h2&gt;
+ &lt;p&gt;An FDO is a standardised, persistent bundle of information about a digital object, ensuring the FAIR reusability of its bit sequence, which may represent data, metadata, software, and so on.&lt;/p&gt;
+&lt;p&gt;It is machine-actionable and is identified by a unique, resolvable PID. The PID resolves to a structured FDO record containing registered attributes.&lt;/p&gt;
+&lt;p&gt;The record requires only a few mandatory fields, currently the FDO profile and type, while allowing community-specific attributes.&lt;/p&gt;</description></item><item><title>FDO Bulletins</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_bulletins/</guid><description>&lt;h2 id="fdo-forum-bulletins"&gt;FDO Forum Bulletins&lt;/h2&gt;
 &lt;p&gt;The FDO Forum publishes regular bulletins to keep the community informed about
 new developments, working group updates, events, and publications related to
 FAIR Digital Objects.&lt;/p&gt;
