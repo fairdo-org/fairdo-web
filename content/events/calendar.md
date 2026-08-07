@@ -11,9 +11,9 @@ events:
     location: "Online"
     category: "Workshop"
     description: |
-      This workshop introduces the basic concepts of FAIR Digital Objects.
+      This Object is just for testing. Please dont click any links. 
 
-      Participants will learn how FDOs support the FAIR principles and how they can be used in research infrastructures.
+      "Test, Test, Test"--- oh Hi, you are still here. :)
     link: "https://example.org/register"
     linkText: "Register now"
 
@@ -23,9 +23,9 @@ events:
     location: "Online"
     category: "Meeting"
     description: |
-      Monthly meeting of the FDO community.
+      This Object is just for testing. Please dont click any links. 
 
-      The meeting is open to all interested participants.
+      "Test, Test, Test"--- oh Hi, you are still here. :)
     link: ""
     linkText: ""
 
@@ -35,22 +35,9 @@ events:
     location: "Berlin"
     category: "Conference"
     description: |
-      The annual conference about FAIR Digital Objects, persistent identifiers and machine-actionable data.
+      This Object is just for testing. Please dont click any links. 
 
-      More information will be announced soon.
+      "Test, Test, Test"--- oh Hi, you are still here. :)
     link: "https://example.org/conference"
     linkText: "More information"
 ---
-
-<!--/* Colours */
-  --color-primary:      #D7965A;
-  --color-primary-dark: #B07A49;
-  --color-primary-light:#FEFAE3;
-  --color-accent:       #f59e0b;
-  --color-dark:         #0f172a;
-  --color-body:         #1e293b;
-  --color-muted:        #64748b;
-  --color-border:       #e2e8f0;
-  --color-bg:           #ffffff;
-  --color-bg-alt:       #f8fafc;
-  --color-bg-dark:      #1F404D;
