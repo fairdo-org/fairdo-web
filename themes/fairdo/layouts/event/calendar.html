@@ -1,0 +1,103 @@
+{{ define "main" }}
+
+<section class="event-calendar">
+
+  <header class="event-calendar__header">
+    <p class="event-calendar__eyebrow">Events</p>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Description }}
+      <p class="event-calendar__intro">
+        {{ . }}
+      </p>
+    {{ end }}
+  </header>
+
+  {{ with .Params.events }}
+
+    <div class="event-list">
+
+      {{ range . }}
+
+        {{ $event := . }}
+
+        <article class="event-card">
+
+          <div class="event-card__date">
+            <span class="event-card__date-label">
+              Date
+            </span>
+
+            <strong class="event-card__date-value">
+              {{ $event.date }}
+            </strong>
+          </div>
+
+          <div class="event-card__content">
+
+            {{ with $event.category }}
+              <span class="event-card__category">
+                {{ . }}
+              </span>
+            {{ end }}
+
+            <h2 class="event-card__title">
+              {{ $event.title }}
+            </h2>
+
+            <div class="event-card__meta">
+
+              {{ with $event.time }}
+                <span class="event-card__meta-item">
+                  <span aria-hidden="true">🕒</span>
+                  {{ . }}
+                </span>
+              {{ end }}
+
+              {{ with $event.location }}
+                <span class="event-card__meta-item">
+                  <span aria-hidden="true">📍</span>
+                  {{ . }}
+                </span>
+              {{ end }}
+
+            </div>
+
+            {{ with $event.description }}
+              <div class="event-card__description">
+                {{ . | markdownify }}
+              </div>
+            {{ end }}
+
+            {{ with $event.link }}
+              <a
+                class="event-card__link"
+                href="{{ . | safeURL }}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ $event.linkText | default "More information" }}
+                <span aria-hidden="true">→</span>
+              </a>
+            {{ end }}
+
+          </div>
+
+        </article>
+
+      {{ end }}
+
+    </div>
+
+  {{ else }}
+
+    <p class="event-calendar__empty">
+      No events found.
+    </p>
+
+  {{ end }}
+
+</section>
+
+{{ end }}
