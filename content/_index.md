@@ -86,8 +86,8 @@ sections:
     text: "Whether you're a researcher, institution, or advocate — there's a place for you."
     primaryButton:
       label: "Get Involved"
-      url: "/get-involved"
+      url: "https://fairdo-org.github.io/fairdo-web/contact/"
     secondaryButton:
       label: "Contact us"
-      url: "/contact"
+      url: "https://fairdo-org.github.io/fairdo-web/contact/"
 ---
