@@ -64,13 +64,13 @@ sections:
     title: "Impact in numbers"
     dark: true
     items:
-      - number: "120+"
-        label: "Partner institutions"
-      - number: "45"
+      - source: "institutions"
+        label: "Institutions"
+      - source: "countries"
         label: "Countries represented"
-      - number: "2M+"
-        label: "Research outputs made FAIR"
-      - number: "8"
+      #- number: "2M+"
+      #  label: "Research outputs made FAIR"
+      - source: "years"
         label: "Years of impact"
 
   - type: posts
