@@ -4,8 +4,8 @@ description: "Home"
 
 hero:
   eyebrow: "Open · Fair · Transparent"
-  title: "Building fair digital infrastructure for everyone"
-  subtitle: "We advance principles of openness and fairness across research, data, and digital systems."
+  title: "Building fair digital infrastructure for everyone based on FAIR Digital Objects"
+  subtitle: "We advance principles of openness and fairness across research, data, and digital systems by applying the FDOs as smallest meaningful and self-standing constituent in the world of data which is independent of technological implementations."
   image: "/images/hero-bg.jpg"
   primaryButton:
     label: "Explore our work"
@@ -26,30 +26,30 @@ sections:
 #        image: "/images/logos/openaire.svg"
 #        url: "https://openaire.eu"
 
-  - type: features
-    eyebrow: "What we do"
-    title: "Our core focus areas"
-    subtitle: "We work across three interconnected domains to create lasting impact."
-    columns: 3
-    items:
-      - emoji: "🔬"
-        title: "FAIR Data"
-        text: "Helping researchers and institutions adopt FAIR (Findable, Accessible, Interoperable, Reusable) data principles."
-        link: 
-          label: "Learn more"
-          url: "/fairdo-web/fair_data/"
-      - emoji: "🌐"
-        title: "Open Science"
-        text: "Advocating for open access to scientific knowledge, publications, and research workflows."
-        link:
-          label: "Learn more"
-          url: "/fairdo-web/open_science/"
-      - emoji: "⚖️"
-        title: "Digital Rights"
-        text: "Ensuring equitable access and representation in digital governance and policy."
-        link:
-          label: "Learn more"
-          url: "/fairdo-web/digital_rights/"
+#  - type: features
+#    eyebrow: "What we do"
+#    title: "Our core focus areas"
+#    subtitle: "We work across three interconnected domains to create lasting impact."
+#    columns: 3
+#    items:
+#      - emoji: "🔬"
+#        title: "FAIR Data"
+#        text: "Helping researchers and institutions adopt FAIR (Findable, Accessible, Interoperable, Reusable) data #principles."
+#        link: 
+#          label: "Learn more"
+#          url: "/fairdo-web/fair_data/"
+#      - emoji: "🌐"
+#        title: "Open Science"
+#        text: "Advocating for open access to scientific knowledge, publications, and research workflows."
+#        link:
+#          label: "Learn more"
+#          url: "/fairdo-web/open_science/"
+#      - emoji: "⚖️"
+#        title: "Digital Rights"
+#        text: "Ensuring equitable access and representation in digital governance and policy."
+#        link:
+#          label: "Learn more"
+#          url: "/fairdo-web/digital_rights/"
 
   - type: split
     eyebrow: "Our mission"
