@@ -1,0 +1,31 @@
+{{/* Shortcode: events-list
+Usage:
+  {{< events-list category="Meeting" >}}
+Renders a simple bulleted list of events from data/events.yml for the given category.
+*/}}
+
+{{ $events := .Site.Data.events }}
+{{ $category := .Get "category" }}
+{{ $list := slice }}
+{{ range $events }}
+  {{ if eq .category $category }}
+    {{ $list = $list | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if not $list }}
+<p class="text-center" style="color: var(--color-muted);">
+  No events found with the category “{{ $category }}”.
+</p>
+{{ else }}
+<ul>
+  {{ range $list }}
+  <li>
+    <strong>{{ .title }}</strong>
+    {{ with .date }}– {{ . }}{{ end }}
+    {{ with .time }}({{ . }}){{ end }}
+    {{ with .location }}· {{ . }}{{ end }}
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
