@@ -4,43 +4,6 @@ description: "Upcoming events and important dates"
 
 type: "event"
 layout: "calendar"
-
-events:
-  - date: "2026-08-12"
-    time: "10:00–12:00"
-    title: "FAIR Digital Objects Workshop"
-    location: "Online"
-    category: "Workshop"
-    description: |
-      This Object is just for testing. Please dont click any links. 
-
-      "Test, Test, Test"--- oh Hi, you are still here. :)
-    link: "https://example.org/register"
-    linkText: "Register now"
-
-  - date: "2026-08-18"
-    time: "14:00–15:30"
-    title: "FDO Community Meeting"
-    location: "Online"
-    category: "Meeting"
-    description: |
-      This Object is just for testing. Please dont click any links. 
-
-      "Test, Test, Test"--- oh Hi, you are still here. :)
-    link: ""
-    linkText: ""
-
-  - date: "2026-08-25"
-    time: "09:00–17:00"
-    title: "FDO Conference"
-    location: "Berlin"
-    category: "Conference"
-    description: |
-      This Object is just for testing. Please dont click any links. 
-
-      "Test, Test, Test"--- oh Hi, you are still here. :)
-    link: "https://example.org/conference"
-    linkText: "More information"
 ---
 <!-- Faked for the thumnail, please dont chance
 -->
