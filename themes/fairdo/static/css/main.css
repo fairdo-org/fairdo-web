@@ -260,9 +260,9 @@ button { cursor: pointer; border: none; background: none; }
   background: transparent;
 }
 
-.nav__item--dropdown:hover .nav__dropdown,
-.nav__item--dropdown:focus-within .nav__dropdown,
-.nav__item--dropdown.is-open .nav__dropdown {
+.nav__item--dropdown:hover > .nav__dropdown,
+.nav__item--dropdown:focus-within > .nav__dropdown,
+.nav__item--dropdown.is-open > .nav__dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -278,6 +278,35 @@ button { cursor: pointer; border: none; background: none; }
 .nav__dropdown-link:hover {
   color: var(--color-primary);
   background: var(--color-primary-light);
+}
+
+/* Nested dropdown */
+.nav__dropdown-item { position: relative; }
+.nav__dropdown-item--parent > .nav__dropdown-link::after {
+  content: '';
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.nav__dropdown-item--parent > .nav__dropdown-link {
+  padding-right: var(--space-8);
+}
+.nav__dropdown .nav__dropdown {
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  padding: var(--space-2) 0;
+}
+.nav__dropdown-item--parent:hover > .nav__dropdown,
+.nav__dropdown-item--parent:focus-within > .nav__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /* Hamburger */
@@ -959,7 +988,8 @@ button { cursor: pointer; border: none; background: none; }
 .nav__item--dropdown > .nav__link {
   padding-bottom: var(--space-4);
 }
-  .nav__item--dropdown.is-open .nav__dropdown { display: block; }
+  .nav__item--dropdown.is-open > .nav__dropdown { display: block; }
+  .nav__dropdown-item--parent.is-open > .nav__dropdown { display: block; }
 
   /* Split */
   .split { grid-template-columns: 1fr; gap: var(--space-10); }
@@ -1516,7 +1546,7 @@ a.contact-info__value:hover { color: var(--color-primary-dark); }
   align-items: center;
   justify-content: center;
   padding: 1.25rem 0.75rem;
-  background: linear-gradient(145deg, #D7965A;, #64748b;);
+  background: linear-gradient(145deg, #D7965A, #64748b);
   color: #ffffff;
   text-align: center;
 }

@@ -1,0 +1,16 @@
+<ul class="nav__dropdown">
+  {{ range .children }}
+    {{ if .HasChildren }}
+      <li class="nav__dropdown-item nav__dropdown-item--parent">
+        <a href="{{ .URL }}" class="nav__dropdown-link">
+          {{ .Name }}
+        </a>
+        {{ partial "nav-dropdown.html" (dict "children" .Children) }}
+      </li>
+    {{ else }}
+      <li class="nav__dropdown-item">
+        <a href="{{ .URL }}" class="nav__dropdown-link">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>

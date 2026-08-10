@@ -5,7 +5,7 @@ description: "FDO Forum Workin Groups"
 
 # Current Working Groups and Task Forces
 
-TSIG
+TSIG Technical Specification & Implementation Group
 
 # About Working Groups
 

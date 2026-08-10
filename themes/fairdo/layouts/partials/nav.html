@@ -27,11 +27,7 @@
                 <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
               </svg>
             </a>
-            <ul class="nav__dropdown">
-              {{ range .Children }}
-                <li><a href="{{ .URL }}" class="nav__dropdown-link">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
+            {{ partial "nav-dropdown.html" (dict "children" .Children) }}
           </li>
         {{ else }}
           <li class="nav__item">

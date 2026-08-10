@@ -32,6 +32,20 @@
        });
      });
 
+     // Nested dropdowns — toggle on mobile click
+     document.querySelectorAll('.nav__dropdown-item--parent > .nav__dropdown-link').forEach(link => {
+       link.addEventListener('click', e => {
+         if (window.innerWidth < 1024) {
+           e.preventDefault();
+           const item = link.closest('.nav__dropdown-item--parent');
+           document.querySelectorAll('.nav__dropdown-item--parent.is-open').forEach(el => {
+             if (el !== item) el.classList.remove('is-open');
+           });
+           item.classList.toggle('is-open');
+         }
+       });
+     });
+
      // Close dropdown when clicking outside
      document.addEventListener('click', e => {
        if (!e.target.closest('.nav__item--dropdown')) {
