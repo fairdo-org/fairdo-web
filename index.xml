@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FDO Forum</title><link>https://fairdo-org.github.io/fairdo-web/</link><description>Recent content on FDO Forum</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 02 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://fairdo-org.github.io/fairdo-web/index.xml" rel="self" type="application/rss+xml"/><item><title>FDO Conferences</title><link>https://fairdo-org.github.io/fairdo-web/events/conferences/</link><pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/events/conferences/</guid><description>&lt;h2 id="list-of-conferences"&gt;List of conferences&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FDO Forum</title><link>https://fairdo-org.github.io/fairdo-web/</link><description>Recent content on FDO Forum</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://fairdo-org.github.io/fairdo-web/index.xml" rel="self" type="application/rss+xml"/><item><title>Calendar</title><link>https://fairdo-org.github.io/fairdo-web/events/calendar/</link><pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/events/calendar/</guid><description>&lt;h2 id="our-next-events"&gt;Our next Events&lt;/h2&gt;
+&lt;p&gt;Discover upcoming workshops, meetings, and conferences in the scientific community. Stay connected!&lt;/p&gt;</description></item><item><title>FDO Events</title><link>https://fairdo-org.github.io/fairdo-web/events/events/</link><pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/events/events/</guid><description>&lt;h2 id="our-events"&gt;Our Events&lt;/h2&gt;
+&lt;h3 id="regular-meetings"&gt;Regular Meetings&lt;/h3&gt;
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+
+
+&lt;ul&gt;
+ 
+ &lt;li&gt;
+ &lt;strong&gt;FDO Community Meeting&lt;/strong&gt;
+ – 2026-08-18
+ (14:00–15:30)
+ · Online
+ &lt;/li&gt;
+ 
+&lt;/ul&gt;
+
+&lt;h3 id="workshops"&gt;Workshops&lt;/h3&gt;
+
+
+
+
+
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+
+&lt;ul&gt;
+ 
+ &lt;li&gt;
+ &lt;strong&gt;FAIR Digital Objects Workshop&lt;/strong&gt;
+ – 2026-08-12
+ (10:00–12:00)
+ · Online
+ &lt;/li&gt;
+ 
+&lt;/ul&gt;
+
+&lt;h3 id="conferences"&gt;Conferences&lt;/h3&gt;
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+
+
+&lt;ul&gt;
+ 
+ &lt;li&gt;
+ &lt;strong&gt;FDO Conference&lt;/strong&gt;
+ – 2026-08-25
+ (09:00–17:00)
+ · Berlin
+ &lt;/li&gt;
+ 
+&lt;/ul&gt;</description></item><item><title>FDO Conferences</title><link>https://fairdo-org.github.io/fairdo-web/events/conferences/</link><pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/events/conferences/</guid><description>&lt;h2 id="list-of-conferences"&gt;List of conferences&lt;/h2&gt;
 &lt;p&gt;The FDO Forum sees it as one of its major tasks to organise regular conferences (1 to 2 years) to regularly bring the FDO community, which consists of a wide spectrum of data scientists, data stewards, data infrastructure builders, data application developers, and data policy experts.&lt;/p&gt;
 &lt;h4 id="2026---vienna-austria"&gt;2026 - Vienna, Austria&lt;/h4&gt;
 &lt;ul&gt;
@@ -96,8 +180,7 @@ fair and open digital infrastructure.&lt;/p&gt;
 &lt;p&gt;Our mission is to advance principles of openness, fairness, and transparency
 across research, data, and digital systems.&lt;/p&gt;
 &lt;h3 id="organizing-the-international-fair-digital-objects-fdo-community"&gt;Organizing the International FAIR Digital Objects (FDO) Community&lt;/h3&gt;
-&lt;p&gt;The FAIR Digital Object Forum (FDOF) is organizing a plattform to advance the specification and application of FAIR Digital Objects (FDO). The objective is to increase the basic interoperability between the many repositories and dataspaces worldwide and to achieve a better coherence amongst the increasing number of initiatives working on FDO-based designs, implementations and applications in research, industry and other sectors.&lt;/p&gt;</description></item><item><title>Calendar</title><link>https://fairdo-org.github.io/fairdo-web/events/calendar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/events/calendar/</guid><description>&lt;h2 id="our-next-events"&gt;Our next Events&lt;/h2&gt;
-&lt;p&gt;Discover upcoming workshops, meetings, and conferences in the scientific community. Stay connected!&lt;/p&gt;</description></item><item><title>Contact</title><link>https://fairdo-org.github.io/fairdo-web/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/contact/</guid><description/></item><item><title>Digital Rights</title><link>https://fairdo-org.github.io/fairdo-web/digital_rights/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/digital_rights/</guid><description>&lt;p&gt;This Page is currently under construction.&lt;/p&gt;</description></item><item><title>FAIR Data</title><link>https://fairdo-org.github.io/fairdo-web/fair_data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/fair_data/</guid><description>&lt;p&gt;This Page is currently under construction.&lt;/p&gt;</description></item><item><title>FAQ</title><link>https://fairdo-org.github.io/fairdo-web/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/faq/</guid><description>&lt;div class="faq-container"&gt;
+&lt;p&gt;The FAIR Digital Object Forum (FDOF) is organizing a plattform to advance the specification and application of FAIR Digital Objects (FDO). The objective is to increase the basic interoperability between the many repositories and dataspaces worldwide and to achieve a better coherence amongst the increasing number of initiatives working on FDO-based designs, implementations and applications in research, industry and other sectors.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://fairdo-org.github.io/fairdo-web/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/contact/</guid><description/></item><item><title>Digital Rights</title><link>https://fairdo-org.github.io/fairdo-web/digital_rights/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/digital_rights/</guid><description>&lt;p&gt;This Page is currently under construction.&lt;/p&gt;</description></item><item><title>FAIR Data</title><link>https://fairdo-org.github.io/fairdo-web/fair_data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/fair_data/</guid><description>&lt;p&gt;This Page is currently under construction.&lt;/p&gt;</description></item><item><title>FAQ</title><link>https://fairdo-org.github.io/fairdo-web/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/faq/</guid><description>&lt;div class="faq-container"&gt;
  
 
  &lt;div class="faq-item"&gt;
@@ -230,9 +313,7 @@ FAIR Digital Objects.&lt;/p&gt;
 &lt;/table&gt;
 &lt;h2 id="stay-informed"&gt;Stay Informed&lt;/h2&gt;
 &lt;p&gt;To receive future bulletins directly in your inbox, sign up for the FDO Forum
-mailing list or follow us on our social media channels.&lt;/p&gt;</description></item><item><title>FDO Code of Confuct</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_code_of_conduct/</guid><description>&lt;p&gt;As part of the 2022 conference in Leiden the FDOF developed participation guidelines which we see as a &lt;a href="https://docs.google.com/document/d/1bsK4gn1132zwzzTl79btr0WwE62lsOHAA9oMEpZt0XA/edit?usp=sharing"&gt;Code of Conduct&lt;/a&gt; guiding all activities of the FDOF. We expect any FDOF member to act according to these guidelines.&lt;/p&gt;</description></item><item><title>FDO Events</title><link>https://fairdo-org.github.io/fairdo-web/events/events/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/events/events/</guid><description>&lt;h2 id="our-events"&gt;Our Events&lt;/h2&gt;
-&lt;h4 id="this-page-is-under-construction"&gt;This page is under construction.&lt;/h4&gt;
-&lt;p&gt;The FDO Forum (FDOF) is organising workshops about topics that are closely related with the FAIR Digital Objects (FDO).&lt;/p&gt;</description></item><item><title>FDO Papers</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/</guid><description>&lt;h2 id="references"&gt;References&lt;/h2&gt;
+mailing list or follow us on our social media channels.&lt;/p&gt;</description></item><item><title>FDO Code of Confuct</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_code_of_conduct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_code_of_conduct/</guid><description>&lt;p&gt;As part of the 2022 conference in Leiden the FDOF developed participation guidelines which we see as a &lt;a href="https://docs.google.com/document/d/1bsK4gn1132zwzzTl79btr0WwE62lsOHAA9oMEpZt0XA/edit?usp=sharing"&gt;Code of Conduct&lt;/a&gt; guiding all activities of the FDOF. We expect any FDOF member to act according to these guidelines.&lt;/p&gt;</description></item><item><title>FDO Papers</title><link>https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/</guid><description>&lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;p&gt;A curated list of foundational papers, reports, and specifications that underpin the theory and practice of FAIR Digital Objects.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="2006"&gt;2006&lt;/h3&gt;
