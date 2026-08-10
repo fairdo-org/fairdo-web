@@ -135,6 +135,12 @@ theme = "fairdo"
   weight = 3
 
 [[menu.main]]
+  name   = "TSIG"
+  url    = "/organisation/tsig"
+  parent = "Working Groups"
+  weight = 1
+
+[[menu.main]]
   name   = "FAQ"
   url    = "/faq"
   weight = 40
