@@ -4,8 +4,8 @@ description: "Home"
 
 hero:
   eyebrow: "Open · Fair · Transparent"
-  title: "Building fair digital infrastructure for everyone"
-  subtitle: "We advance principles of openness and fairness across research, data, and digital systems."
+  title: "Building fair digital infrastructure for everyone based on FAIR Digital Objects"
+  subtitle: "We advance principles of openness and fairness across research, data, and digital systems by applying the FDOs as smallest meaningful and self-standing constituent in the world of data which is independent of technological implementations."
   image: "/images/hero-bg.jpg"
   primaryButton:
     label: "Explore our work"
@@ -37,7 +37,7 @@ sections:
         text: "Helping researchers and institutions adopt FAIR (Findable, Accessible, Interoperable, Reusable) data principles."
         link: 
           label: "Learn more"
-          url: "/fairdo-web/content/what_is_an_fdo/"
+          url: "/fairdo-web/fair_data/"
       - emoji: "🌐"
         title: "Open Science"
         text: "Advocating for open access to scientific knowledge, publications, and research workflows."
