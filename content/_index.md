@@ -37,7 +37,7 @@ sections:
         text: "Helping researchers and institutions adopt FAIR (Findable, Accessible, Interoperable, Reusable) data principles."
         link: 
           label: "Learn more"
-          url: "/fairdo-web/fair_data/"
+          url: "/fairdo-web/content/what_is_an_fdo/"
       - emoji: "🌐"
         title: "Open Science"
         text: "Advocating for open access to scientific knowledge, publications, and research workflows."
