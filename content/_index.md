@@ -35,21 +35,21 @@ sections:
       - emoji: "🔬"
         title: "FAIR Data"
         text: "Helping researchers and institutions adopt FAIR (Findable, Accessible, Interoperable, Reusable) data principles."
-        link:
+        link: 
           label: "Learn more"
-          url: "/projects/fair-data"
+          url: "/fairdo-web/fair_data/"
       - emoji: "🌐"
         title: "Open Science"
         text: "Advocating for open access to scientific knowledge, publications, and research workflows."
         link:
           label: "Learn more"
-          url: "/projects/open-science"
+          url: "/fairdo-web/open_science/"
       - emoji: "⚖️"
         title: "Digital Rights"
         text: "Ensuring equitable access and representation in digital governance and policy."
         link:
           label: "Learn more"
-          url: "/projects/digital-rights"
+          url: "/fairdo-web/digital_rights/"
 
   - type: split
     eyebrow: "Our mission"
