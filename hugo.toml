@@ -123,7 +123,7 @@ theme = "fairdo"
   weight = 1
 
 [[menu.main]]
-  name   = "Excutive Committee"
+  name   = "Executive Committee"
   url    = "/co-chairs-group"
   parent = "Organisation"
   weight = 2

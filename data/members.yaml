@@ -226,7 +226,7 @@
   affiliation_link: "https://www.gwdg.de"
   country: "DE"
   groups: ["SC","EC","TSIG"]
-  roles: ["member"]
+  roles: ["member","chair","member"]
 
 - name: "Tshiamo Motshegwa (New)"
   affiliation: "NRF"

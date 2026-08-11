@@ -1,0 +1,51 @@
+# data/events.yaml
+# Calendar events shown on the events calendar page.
+# Each entry contains:
+#   date        – event date (YYYY-MM-DD)
+#   time        – time range
+#   title       – event title
+#   location    – where the event takes place
+#   category    – event category, e.g. on of [Meeting, Workshop, Conference]
+#   description – short description (optional)
+#   link        – external registration/reference URL (optional)
+#   linkText    – link label (optional)
+
+- date: "Every First Monday of the month"
+  time: "17:00 - 18:00 CEST" 
+  title: "FDOF EC Meeting"
+  location: "Online"
+  category: "Meeting"
+  description: "Meeting of the Executive Committee"
+
+- date: "Every second Monday of the month"
+  time: "17:00 - 18:00 CEST" 
+  title: "FDOF TSIG"
+  location: "Online"
+  category: "Meeting"
+  description: "Technical Specification & Implementation Group Meeting"
+
+- date: "Every third Monday of the month"
+  time: "17:00 - 18:00 CEST" 
+  title: "FDOF SC Meeting"
+  location: "Online"
+  category: "Meeting"
+  description: "Meeting of the Execut Steering Committee"
+
+- date: "tbd"
+  time: "tbd"
+  title: "FDOF Workshop on TRUST"
+  location: "Online"
+  category: "Workshop"
+  description: 
+
+- date: "2026-03-25"
+  time: "09:00–17:00"
+  title: "3rd FAIR Digital Objects Conference"
+  location: "Vienna"
+  category: "Conference"
+  description: For the third time at this scale, the FDO2026 Conference 
+   will bring together leading experts from science and industry, technologists, 
+   data stewards/managers, researchers and policymakers engaged in advancing 
+   FAIR Digital Objects (FDOs).
+  link: "https://fairdo.org/fdo-conference-2026/"
+  linkText: "More information"
