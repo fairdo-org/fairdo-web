@@ -49,3 +49,152 @@
    FAIR Digital Objects (FDOs).
   link: "https://fairdo.org/fdo-conference-2026/"
   linkText: "More information"
+
+- date: "2025-06-30"
+  time: "15:00-17:00"
+  title: "FDO work in medical Applications"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/file/d/1UX6xlWqLhzLYcRUTw7y5jJqgpxVq0Sox/view?usp=sharing"
+  linkText: "For details see this announcement"
+
+- date: "2025-06-11"
+  time: "15:00-17:00"
+  title: FDO Operations Paper"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/file/d/1wSjAxvtOEcDRAebrKl_cLMJUaxhBuiDM/view"
+  linkText: "For details see this announcement (which includes a reference to the paper)"
+
+- date: "2025-05-19"
+  time: "15:00-17:00"
+  title: "Norwegian Research Data Archive"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/file/d/1sAk_ASwVLgxrG5bOIAsVQr8E2_qh5vqA/view"
+  linkText: "For details see this announcement"
+
+- date: "2025-04-07"
+  time: "15:00-17:00"
+  title: "The EPOS Research Infrastructure "
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/file/d/19LqAvFR5dMz_YvMh1nI3SQlO0MJi01DN/view"
+  linkText: "For details see this announcement"
+
+- date: "2025-01-15"
+  time: "14:00-17:00"
+  title: "FDO One Information-Day "
+  location: "Online"
+  category: "Meeting"
+  description: 
+  link: "https://drive.google.com/file/d/1GrcGn5ZE-rV_0suPqFagxG0C9d8uNb3F/view"
+  linkText: "For details see this announcement"
+
+- date: "2024-11-26"
+  time: "15:00-16:30"
+  title: "FAIR Digital Objects and the Cross-Domain Interoperability Framework (CDIF)"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/file/d/1k8AFrnGVKCA5j48GqCMirGDEbIyEfbJl/view"
+  linkText: "For details see this announcement"
+
+- date: "2024-11-26"
+  time: "15:00-16:30"
+  title: "CDIF and relation to FDOs"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/file/d/1k8AFrnGVKCA5j48GqCMirGDEbIyEfbJl/view"
+  linkText: "For details see this announcement"
+
+- date: "September 2024"
+  time: 
+  title: "Arican FDO Info Day"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/drive/folders/1ZjYPf0Cw9rCUxC9H6Hmph4GganDa7glt"
+  linkText: "For details see this announcement"
+
+- date: "September 2024"
+  time: 
+  title: "Layered Archtecture Workshop"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/drive/folders/1qLNxu-5NWapVzJwzIqfjlSofB50mDkGu"
+  linkText: "For details see this announcement"
+
+- date: "June 2023"
+  time: 
+  title: "First Testbed Workshop"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/drive/folders/1qLNxu-5NWapVzJwzIqfjlSofB50mDkGu"
+  linkText: "For details see this announcement"
+
+- date: "March 2023"
+  time: 
+  title: "FDO application Workshop"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/drive/folders/1z6JTRxCibHjLri27xjlwURdvWZQrert2?usp=sharing"
+  linkText: "For details see this announcement"
+
+- date: "February 2023"
+  time: 
+  title: "FDO Roadmap workshop"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/drive/folders/1XClhLM8z29fBKFoqpiFKp8hC-mfGTy2c?usp=sharing"
+  linkText: "For details see this announcement"
+
+- date: "February 2023"
+  time: 
+  title: "Relation FDO and Operations"
+  location: "Online"
+  category: "Workshop"
+  description: 
+  link: "https://drive.google.com/drive/folders/1LXc6Fx5tFRLIRX8n-aP7GegP1H6lLV26?usp=sharing"
+  linkText: "For details see this announcement"
+
+- date: "2023 Lectures"
+  time: 
+  title: "Relation FDO and Operations"
+  location: "Online"
+  category: "Meeting"
+  description: 
+  link: "https://drive.google.com/drive/folders/19KDzZb8GI0UT4Z1HXMTLqkVwm1DQ9X-D?usp=sharing"
+  linkText: "For details see this announcement"
+
+- date: "2022 Lectures"
+  time: 
+  title: "Relation FDO and Operations"
+  location: "Online"
+  category: "Meeting"
+  description: 
+  link: "https://drive.google.com/drive/folders/1Y_dfCQ1a_N7hlr12-mwJKy4cak3ThFIV?usp=sharing"
+  linkText: "For details see this announcement"
+
+- date: "January 2022"
+  time: 
+  title: "High Level Views Panel"
+  location: "Online"
+  category: "Meeting"
+  description: 
+  link: "https://drive.google.com/drive/folders/1bZ1sVvI-8AkQ2tnxzgVtv3iYwmKNls3E?usp=sharing"
+  linkText: "For details see this announcement"
+
+
+
+
+
