@@ -54,10 +54,10 @@ theme = "fairdo"
   parent =  "About"
   weight = 10
 
-[[menu.main]]
-  name   = "Blog"
-  url    = "/blog"
-  weight = 30
+#[[menu.main]]
+ # name   = "Blog"
+ # url    = "/blog"
+ # weight = 30
 
 [[menu.main]]
   name   = "Documents"
