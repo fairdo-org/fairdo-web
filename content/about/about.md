@@ -3,10 +3,7 @@ title: "About Us"
 description: "Learn more about our organisation and mission."
 ---
 
-### Who We Are
-
-We are a team of researchers, developers, and advocates working to build
-fair and open digital infrastructure.
+We are a diverse and passionate team of researchers, developers, and advocates. We are driven by the shared conviction that the digital future must be built on the principles of equity, transparency, and collective ownership. We are dedicated to designing, developing, and championing fair, open, and resilient digital infrastructure. This infrastructure empowers individuals, communities, and organizations around the world. It allows them to collaborate, innovate, and thrive in a decentralized, trustworthy, and inclusive digital ecosystem.
 
 ### Our Mission
 

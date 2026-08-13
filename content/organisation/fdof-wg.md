@@ -3,11 +3,11 @@ title: "FDOF Working Groups"
 description: "FDO Forum Workin Groups"
 ---
 
-# Current Working Groups and Task Forces
+<!--#### Current Working Groups and Task Forces
 
 TSIG Technical Specification & Implementation Group
-
-# About Working Groups
+-->
+#### About Working Groups
 
 Working Groups (WG) in the FDOF are set up to take care of a specific concrete and goal-directed tasks within the FDOF to foster the concept of FDOs and/or to stimulate essential work fostering implementations and infrastructure building. WGs
 - need to deliver reports about FDO aspects or components,
