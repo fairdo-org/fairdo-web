@@ -37,6 +37,11 @@ theme = "fairdo"
   weight = 10
 
 [[menu.main]]
+  name   = "About"
+  url    = "/about"
+  weight = 10
+
+[[menu.main]]
   name   = "FDOF Phase I"
   url    = "/about/fdof_phase1"
   parent =  "About"

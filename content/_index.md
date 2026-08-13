@@ -58,7 +58,7 @@ sections:
     image: "images/grafik-daten-768x704.png"
     button:
       label: "About us"
-      url: ""
+      url: "/fairdo-web/about/about/"
 
   - type: stats
     title: "Impact in numbers"

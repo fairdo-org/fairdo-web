@@ -3,12 +3,12 @@ title: "About Us"
 description: "Learn more about our organisation and mission."
 ---
 
-## Who We Are
+### Who We Are
 
 We are a team of researchers, developers, and advocates working to build
 fair and open digital infrastructure.
 
-## Our Mission
+### Our Mission
 
 Our mission is to advance principles of openness, fairness, and transparency
 across research, data, and digital systems.
