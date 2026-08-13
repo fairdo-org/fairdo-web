@@ -1,10 +1,8 @@
 ---
-title: "FDO Conferences"
+title: "List of FDO Conferences"
 description: "Conferences organized by the FDO Forum"
 date: "2026-06-02"
 ---
-
-## List of conferences
 
 The FDO Forum sees it as one of its major tasks to organise regular conferences (1 to 2 years) to regularly bring the FDO community, which consists of a wide spectrum of data scientists, data stewards, data infrastructure builders, data application developers, and data policy experts.
 
