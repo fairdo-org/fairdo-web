@@ -2,7 +2,8 @@
 title: " FAIR Data - What is an FDO?"
 description: "Learn more about our organisation and mission."
 ---
-#### What is an FDO?
+<!-- #### What is an FDO? 
+-->
 People often ask us to explain what an FDO is in a few short words. 
 An FDO is a standardized and persistent bundle of all information about a digital object that is important for all FAIR aspects of reusing the included bit sequence. It should be noted that the bit sequence can encode any digital information, such as data, metadata, configurations, semantic assertions, and software. 
 
