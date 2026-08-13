@@ -39,14 +39,14 @@ sections:
          # label: "Learn more"
           #url: "/fairdo-web/fair_data/"
      # - emoji: "🌐"
-      #  title: "Open Science"
-       # text: "Advocating for open access to scientific knowledge, publications, and research workflows."
+      #  title: "Events"
+       # text: "Upcoming events and important dates"
         #link:
          # label: "Learn more"
           #url: "/fairdo-web/open_science/"
-     # - emoji: "⚖️"
-      #  title: "Digital Rights"
-       # text: "Ensuring equitable access and representation in digital governance and policy."
+     # - emoji: "📄"
+      #  title: "Papers"
+       # text: "Papers, reports, and specifications that underpin the theory and practice of FAIR Digital Objects."
         #link:
          # label: "Learn more"
           #url: "/fairdo-web/digital_rights/"
@@ -58,7 +58,7 @@ sections:
     image: "images/grafik-daten-768x704.png"
     button:
       label: "About us"
-      url: "/about"
+      url: ""
 
   - type: stats
     title: "Impact in numbers"
@@ -73,13 +73,13 @@ sections:
       - source: "years"
         label: "Years of impact"
 
-  - type: posts
-    title: "Latest from our blog"
-    section: "blog"
-    count: 3
-    link:
-      label: "View all posts"
-      url: "/blog"
+  #- type: posts
+   # title: "Latest from our blog"
+    #section: "blog"
+    #count: 3
+    #link:
+      #label: "View all posts"
+      #url: "/blog"
 
   - type: cta
     title: "Ready to join the movement?"
