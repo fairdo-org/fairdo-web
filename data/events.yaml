@@ -10,13 +10,13 @@
 #   link        – external registration/reference URL (optional)
 #   linkText    – link label (optional)
 
-- date: "Every First Monday of the month"
+- date: "Every first Monday of the month"
   sortDate: "2999-12-31"
   time: "17:00 - 18:00 CEST" 
   title: "FDOF EC Meeting"
   location: "Online"
   category: "Meeting"
-  description: "Meeting of the Executive Committee"
+  #description: "Meeting of the Executive Committee"
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-30"
@@ -24,7 +24,7 @@
   title: "FDOF TSIG"
   location: "Online"
   category: "Meeting"
-  description: "Technical Specification & Implementation Group Meeting"
+  #description: "Technical Specification & Implementation Group Meeting"
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-29"
@@ -32,7 +32,7 @@
   title: "FDOF SC Meeting"
   location: "Online"
   category: "Meeting"
-  description: "Meeting of the Execut Steering Committee"
+  #description: "Meeting of the Execut Steering Committee"
 
 - date: "2026-09-13"
   sortDate: "2026-09-13"
