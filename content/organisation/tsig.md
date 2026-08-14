@@ -1,6 +1,21 @@
 ---
-title: "TSIG "
+title: "TSIG Technical Specification & Implementation Group "
 description: "Technical Specification & Implementation Group"
 ---
 
-The Technical Specification & Implementation Group (TSIG) is a working group within the FDO Forum focused on developing technical specifications and supporting implementations of FDOs.
+Following the completion of the basic FDO specification work just prior to the FDO conference in October 2022, the FDO Forum is now starting work on the second phase with goals of focusing on closing the gaps in the FDO specifications, creating specifications in specific areas closely related to FDOs, elaborating detailed plans for creating an open reference implementation (testbed), and on fostering collaborations amongst the increasing number of groups applying the FDO concept.
+
+The two former Working Groups, TSIG I and the Basic Infrastructure Group (BIG) decided to merge into a single group. They recognized that their original mandates would result in too much overlapping of efforts when tackling the afore mentioned tasks and that a single group would be sufficient to address them. Both groups produced a set of stable complementary [specification documents](/fairdo-web/documents/fdo_specifications/).
+
+The role of the TSIG II in the second phase in the FAIR Digital Object Forum is to continue to further concretize the broad conceptual goals that originate from combining the data management principles of the [FAIR Guidelines](https://www.go-fair.org/fair-principles/) with the architectural principles of the [Digital Object Architecture](https://www.dona.net/digitalobjectarchitecture) with a particular focus in achieving machine actionability and data interoperability. The TSIG will define specifications and/or recommendations describing the minimum level of agreement required among data publishers, tool developers, and e-infrastructure providers to achieve the machine friendly, accessible, and interoperable data space that both science and commerce require to leverage the potential benefits inherent in today’s vast amounts of data, computing power, and network capacity.
+The upcoming work will build on FDO Forum’s official specification documents, in particular on the “FDO Overview” [10.5281/zenodo.7824713](https://doi.org/10.5281/zenodo.7824713), the “FDO Requirement Specifications” [10.5281/zenodo.7781925](https://doi.org/10.5281/zenodo.7781925) and the “Implementation of Attributes, Types, Profiles, Registries” [10.5281/zenodo.7825572](https://doi.org/10.5281/zenodo.7825572). The FDO Overview gives a broader insight on the nature and properties of FDOs. The Requirement Specification gives an extended set of requirements that each FDO implementation needs to adhere to assuming that there might be different approaches and implementations. The Implementation of Attributes, Types, Profiles and Registries document describes in detail how FDO Profiles, FDO Attributes and Registries are related to each other and how they need to be built.
+
+Topics to be addressed in the coming phase include:
+* Identifying gaps in the set of specifications or areas which have not been dealt with sufficient detail such as, for example, the relation of FDOs and Operations, the exact nature of FDO Collections, and others.
+* Fostering implementations of the specifications and coordinating the work on applying the FDO concept.
+* Defining FDO compliance which could include both technical aspects, e.g., protocol compliance and use of qualified references, as well as social aspects (e.g. persistence guarantees). This must result in the creation of specifications and the development of validation methods, automated, when possible, to establish such compliance.
+* Specifying a reference implementation (testbed) and fostering its joint development allowing anyone interested to hook up new Digital Objects into the FDO domain.
+* Encouraging and helping interested experts to develop adaptors to integrate their existing systems within the FDO space.
+* Designing and running training courses and other educational activities.
+
+FDO TSIG will shift more work to smaller subgroups and seek for collaborations with the Research Data Alliance FDO Fabric Interest Group (RDA FDOF IG), GOFAIR, CODATA and others to achieve its goals. TSIG is open to any expert who would like to participate in working on the above-mentioned goals.
