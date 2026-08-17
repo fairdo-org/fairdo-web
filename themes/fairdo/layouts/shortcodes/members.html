@@ -2,7 +2,8 @@
 Shortcode: members
 Usage:
 {{< members>}} – shows *all* members
-  {{< members group="SC">}} – shows only members that have the role “Chair”
+  {{< members group="SC">}} – shows only members of the group “SC”
+  (with only the role that applies to that group)
     ----------------------------------------------------------------- */}}
 
     {{/* -----------------------------------------------------------------
@@ -51,13 +52,33 @@ Usage:
           {{ end }}
         </div>
 
-        {{$roles := .roles}}
+        {{$roles := .roles | default (slice "member")}}
+        {{ if $groupParam }}
+        {{/* When filtered by group, show only the role for that group:
+            groups[i] maps to roles[i]; if fewer roles than groups,
+            reuse the last role (e.g. a single role for all groups). */}}
+        {{ $groupIndex := -1 }}
+        {{ range $i, $g := .groups }}
+          {{ if eq $g $groupParam }}{{ $groupIndex = $i }}{{ end }}
+        {{ end }}
+        {{ $roleIndex := 0 }}
+        {{ if gt (len $roles) 0 }}
+          {{ $roleIndex = sub (len $roles) 1 }}
+          {{ if and (ge $groupIndex 0) (lt $groupIndex (len $roles)) }}
+            {{ $roleIndex = $groupIndex }}
+          {{ end }}
+        {{ end }}
+        <div class="member-card__roles-under-avatar">
+          <span class="member-card__badge">{{ index $roles $roleIndex }}</span>
+        </div>
+        {{ else }}
         {{ if $roles }}
         <div class="member-card__roles-under-avatar">
           {{ range $roles }}
           <span class="member-card__badge">{{ . }}</span>
           {{ end }}
         </div>
+        {{ end }}
         {{ end }}
 </div>
         <!-- Info -->

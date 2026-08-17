@@ -12,13 +12,14 @@
         {{ . }}
       </p>
     {{ end }}
+    Please note that SC, EC, and TSIG meet regularly
   </header>
 
   {{ with $.Site.Data.events }}
 
     <div class="event-list">
 
-      {{ range . }}
+      {{ range sort . "sortDate" "desc" }}
 
         {{ $event := . }}
 

@@ -10,35 +10,48 @@
 #   link        – external registration/reference URL (optional)
 #   linkText    – link label (optional)
 
-- date: "Every First Monday of the month"
+- date: "Every first Monday of the month"
+  sortDate: "2999-12-31"
   time: "17:00 - 18:00 CEST" 
   title: "FDOF EC Meeting"
   location: "Online"
   category: "Meeting"
-  description: "Meeting of the Executive Committee"
+  #description: "Meeting of the Executive Committee"
 
 - date: "Every second Monday of the month"
+  sortDate: "2999-12-30"
   time: "17:00 - 18:00 CEST" 
   title: "FDOF TSIG"
   location: "Online"
   category: "Meeting"
-  description: "Technical Specification & Implementation Group Meeting"
+  #description: "Technical Specification & Implementation Group Meeting"
 
-- date: "Every third Monday of the month"
+- date: "Every second Monday of the month"
+  sortDate: "2999-12-29"
   time: "17:00 - 18:00 CEST" 
   title: "FDOF SC Meeting"
   location: "Online"
   category: "Meeting"
-  description: "Meeting of the Execut Steering Committee"
+  #description: "Meeting of the Execut Steering Committee"
 
-- date: "tbd"
-  time: "tbd"
-  title: "FDOF Workshop on TRUST"
+- date: "2026-09-13"
+  sortDate: "2026-09-13"
+  time: "14:30 CEST"
+  title: "From Modernizing a Data Center to Designing an Information-Centric One"
   location: "Online"
   category: "Workshop"
-  description: 
+  description: "Speaker: Massimo Fares (INGV); How the Italian Seismology and Vulcanology Institute turns its repository covering sensor and observation data of different types to an information centric one optimising the management and the service to users."
+
+- date: "2026-10-02"
+  sortDate: "2026-10-02"
+  time: "14:30 CEST"
+  title: "Conceiving an Architecture of Trust"
+  location: "Online"
+  category: "Workshop"
+  description: "Speakers: Paolo Budroni, Peter Wittenburg; The current practices can’t be continued since they will hamper making AI a commodity and addressing UN’s Sustainable Development Goals. A framework is required that also takes into account the different views and interests, that addresses sovereignty, transparency, traceability, accountability and persistence."
 
 - date: "2026-03-25"
+  sortDate: "2026-03-25"
   time: "09:00–17:00"
   title: "3rd FAIR Digital Objects Conference"
   location: "Vienna"
@@ -51,6 +64,7 @@
   linkText: "More information"
 
 - date: "2025-06-30"
+  sortDate: "2025-06-30"
   time: "15:00-17:00"
   title: "FDO work in medical Applications"
   location: "Online"
@@ -60,6 +74,7 @@
   linkText: "For details see this announcement"
 
 - date: "2025-06-11"
+  sortDate: "2025-06-11"
   time: "15:00-17:00"
   title: FDO Operations Paper"
   location: "Online"
@@ -69,6 +84,7 @@
   linkText: "For details see this announcement (which includes a reference to the paper)"
 
 - date: "2025-05-19"
+  sortDate: "2025-05-19"
   time: "15:00-17:00"
   title: "Norwegian Research Data Archive"
   location: "Online"
@@ -78,6 +94,7 @@
   linkText: "For details see this announcement"
 
 - date: "2025-04-07"
+  sortDate: "2025-04-07"
   time: "15:00-17:00"
   title: "The EPOS Research Infrastructure "
   location: "Online"
@@ -87,6 +104,7 @@
   linkText: "For details see this announcement"
 
 - date: "2025-01-15"
+  sortDate: "2025-01-15"
   time: "14:00-17:00"
   title: "FDO One Information-Day "
   location: "Online"
@@ -96,6 +114,7 @@
   linkText: "For details see this announcement"
 
 - date: "2024-11-26"
+  sortDate: "2024-11-26"
   time: "15:00-16:30"
   title: "FAIR Digital Objects and the Cross-Domain Interoperability Framework (CDIF)"
   location: "Online"
@@ -105,6 +124,7 @@
   linkText: "For details see this announcement"
 
 - date: "2024-11-26"
+  sortDate: "2024-11-26"
   time: "15:00-16:30"
   title: "CDIF and relation to FDOs"
   location: "Online"
@@ -114,6 +134,7 @@
   linkText: "For details see this announcement"
 
 - date: "September 2024"
+  sortDate: "2024-09-01"
   time: 
   title: "Arican FDO Info Day"
   location: "Online"
@@ -123,6 +144,7 @@
   linkText: "For details see this announcement"
 
 - date: "September 2024"
+  sortDate: "2024-09-01"
   time: 
   title: "Layered Archtecture Workshop"
   location: "Online"
@@ -132,6 +154,7 @@
   linkText: "For details see this announcement"
 
 - date: "June 2023"
+  sortDate: "2023-06-01"
   time: 
   title: "First Testbed Workshop"
   location: "Online"
@@ -141,6 +164,7 @@
   linkText: "For details see this announcement"
 
 - date: "March 2023"
+  sortDate: "2023-03-01"
   time: 
   title: "FDO application Workshop"
   location: "Online"
@@ -150,6 +174,7 @@
   linkText: "For details see this announcement"
 
 - date: "February 2023"
+  sortDate: "2023-02-01"
   time: 
   title: "FDO Roadmap workshop"
   location: "Online"
@@ -159,6 +184,7 @@
   linkText: "For details see this announcement"
 
 - date: "February 2023"
+  sortDate: "2023-02-01"
   time: 
   title: "Relation FDO and Operations"
   location: "Online"
@@ -168,6 +194,7 @@
   linkText: "For details see this announcement"
 
 - date: "2023 Lectures"
+  sortDate: "2023-12-31"
   time: 
   title: "Relation FDO and Operations"
   location: "Online"
@@ -177,6 +204,7 @@
   linkText: "For details see this announcement"
 
 - date: "2022 Lectures"
+  sortDate: "2022-12-31"
   time: 
   title: "Relation FDO and Operations"
   location: "Online"
@@ -186,6 +214,7 @@
   linkText: "For details see this announcement"
 
 - date: "January 2022"
+  sortDate: "2022-01-01"
   time: 
   title: "High Level Views Panel"
   location: "Online"
@@ -195,6 +224,13 @@
   linkText: "For details see this announcement"
 
 
+- date: "2026-30-10"
+  sortDate: "2026-30-10"
+  time: "14:30 CEST"
+  title: "FDO Specifications 2026"
+  location: "Online"
+  category: "Workshop"
+  description: "Speakers: Sven Bingert, Jana Böhm, Maximilian Inckmann; During the last year, the FDO specifications underwent a major reorganization: from a collection of official notes to one consolidated and harmonized W3C-style specification document. These updated specifications are built on five years of practical experience in creating, managing, and utilizing FDOs across various projects."
 
 
 
