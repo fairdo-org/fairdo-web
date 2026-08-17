@@ -2,9 +2,6 @@
 title: "FDO Bulletins"
 description: "FDO Forum Bulletins — regular updates from the FAIR Digital Objects community."
 ---
-
-## FDO Forum Bulletins
-
 The FDO Forum publishes regular bulletins to keep the community informed about
 new developments, working group updates, events, and publications related to
 FAIR Digital Objects.

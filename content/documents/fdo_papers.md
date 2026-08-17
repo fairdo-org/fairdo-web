@@ -2,14 +2,10 @@
 title: "FDO Papers"
 description: "A collection of papers, specifications, and recommendations related to FAIR Digital Objects."
 ---
-
-## References
-
 A curated list of foundational papers, reports, and specifications that underpin the theory and practice of FAIR Digital Objects.
-
 ---
 
-### 2006
+#### 2006
 
 **A framework for distributed digital object services**
 Kahn, R., & Wilensky, R. (2006)
@@ -18,7 +14,7 @@ Kahn, R., & Wilensky, R. (2006)
 
 ---
 
-### 2015
+#### 2015
 
 **Data Foundation and Terminology Work Group Products**
 Berg-Cross, G., Ritz, R., & Wittenburg, P. (2015)
@@ -26,7 +22,7 @@ Berg-Cross, G., Ritz, R., & Wittenburg, P. (2015)
 
 ---
 
-### 2016
+#### 2016
 
 **Automated schema extraction for PID information types**
 Schwardmann, U. (2016)
@@ -35,7 +31,7 @@ Schwardmann, U. (2016)
 
 ---
 
-### 2018
+#### 2018
 
 **Common Patterns in Revolutionary Infrastructures and Data**
 Peter Wittenburg, G. S. (2018)
@@ -56,7 +52,7 @@ European Commission: Directorate-General for Research and Innovation (2018)
 
 ---
 
-### 2019
+#### 2019
 
 **FAIR Principles and Digital Objects: Accelerating Convergence on a Data Infrastructure**
 Schultes, E., & Wittenburg, P. (2019)
@@ -71,7 +67,7 @@ GEDE (2019)
 
 ---
 
-### 2020
+#### 2020
 
 **FAIR Data and Services in Biodiversity Science and Geoscience**
 Lannom, L., Koureas, D., & Hardisty, A. R. (2020)
