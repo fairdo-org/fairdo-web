@@ -3,7 +3,6 @@ title: "FDO Papers"
 description: "A collection of papers, specifications, and recommendations related to FAIR Digital Objects."
 ---
 A curated list of foundational papers, reports, and specifications that underpin the theory and practice of FAIR Digital Objects.
----
 
 #### 2006
 
