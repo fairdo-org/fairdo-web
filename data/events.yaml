@@ -34,9 +34,9 @@
   category: "Meeting"
   #description: "Meeting of the Execut Steering Committee"
 
-- date: "2026-09-13"
+- date: "2026-09-15"
   sortDate: "2026-09-13"
-  time: "14:30 CEST"
+  time: "???? CEST"
   title: "From Modernizing a Data Center to Designing an Information-Centric One"
   location: "Online"
   category: "Workshop"
@@ -44,11 +44,14 @@
 
 - date: "2026-10-02"
   sortDate: "2026-10-02"
-  time: "14:30 CEST"
+  time: "???? CEST"
   title: "Conceiving an Architecture of Trust"
   location: "Online"
   category: "Workshop"
   description: "Speakers: Paolo Budroni, Peter Wittenburg; The current practices can’t be continued since they will hamper making AI a commodity and addressing UN’s Sustainable Development Goals. A framework is required that also takes into account the different views and interests, that addresses sovereignty, transparency, traceability, accountability and persistence."
+  link: ""
+  linkText: "Hier einfüllen"
+
 
 - date: "2026-03-25"
   sortDate: "2026-03-25"
@@ -226,11 +229,12 @@
 
 - date: "2026-30-10"
   sortDate: "2026-30-10"
-  time: "14:30 CEST"
+  time: "??? CEST"
   title: "FDO Specifications 2026"
   location: "Online"
   category: "Workshop"
   description: "Speakers: Sven Bingert, Jana Böhm, Maximilian Inckmann; During the last year, the FDO specifications underwent a major reorganization: from a collection of official notes to one consolidated and harmonized W3C-style specification document. These updated specifications are built on five years of practical experience in creating, managing, and utilizing FDOs across various projects."
-
+  link: ""
+  linkText: ""
 
 
