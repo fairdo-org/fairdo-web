@@ -68,8 +68,8 @@
   roles: ["member"]
 
 - name: "Erik Schultes"
-  affiliation: "GOFAIR"
-  affiliation_link: "https://www.go-fair.org"
+  affiliation: "partners in FAIR"
+  affiliation_link: "https://partnersinfair.com"
   country: "NL"
   groups: ["SC","EC"]
   roles: ["member"]
@@ -237,14 +237,14 @@
 
 - name: "Themis Zamani"
   affiliation: "GRNET"
-  affiliation_link: ""
+  affiliation_link: "https://grnet.gr"
   country: "GR"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Thomas Jejkal"
   affiliation: "KIT"
-  affiliation_link: ""
+  affiliation_link: "https://www.scc.kit.edu"
   country: "DE"
   groups: ["TSIG"]
   roles: ["member"]
@@ -265,56 +265,55 @@
 
 - name: "Wouter Adding"
   affiliation: "Naturalis"
-  affiliation_link: ""
+  affiliation_link: "https://www.naturalis.nl"
   country: "NL"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Yudong Zhang"
   affiliation: "GESIS"
-  affiliation_link: ""
+  affiliation_link: "https://www.gesis.org"
   country: "DE"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Zachary Trautt"
   affiliation: "NIST"
-  affiliation_link: ""
+  affiliation_link: "https://www.nist.gov"
   country: "US"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Zeyd Boukhers"
   affiliation: "FhG FIT"
-  affiliation_link: ""
+  affiliation_link: "https://www.fit.fraunhofer.de"
   country: "DE"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Robert Hanisch"
   affiliation: "NIST"
-  affiliation_link: ""
+  affiliation_link: "https://www.nist.gov"
   country: "US"
   groups: ["SC","TSIG"]
   roles: ["member"]
 
 - name: "Robert Quick"
   affiliation: "IU"
-  affiliation_link: ""
   country: "US"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Sharif Islam"
   affiliation: "Naturalis"
-  affiliation_link: ""
+  affiliation_link: "https://www.naturalis.nl"
   country: "NL"
   groups: ["TSIG"]
   roles: ["member"]
 
 - name: "Twan Goosen"
   affiliation: "CLARIN"
-  affiliation_link: ""
+  affiliation_link: "https://www.clarin.eu"
   country: "NL"
   groups: ["TSIG"]
   roles: ["member"]
@@ -328,7 +327,14 @@
 
 - name: "Christophe Blanchi"
   affiliation: "DONA"
-  affiliation_link: ""
+  affiliation_link: "https://www.dona.net"
   country: "HS"
   groups: ["SC","TSIG"]
   roles: ["chair"]
+
+- name: "Barbara Magagna"
+  affiliation: "GO FAIR Foundation"
+  affiliation_link: "https://www.gofair.foundation"
+  country: "HS"
+  groups: ["SC"]
+  roles: ["member"]
