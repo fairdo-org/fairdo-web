@@ -38,6 +38,8 @@
   location: "Online"
   category: "Webinar"
   description: "Speaker: Massimo Fares (INGV); How the Italian Seismology and Vulcanology Institute turns its repository covering sensor and observation data of different types to an information centric one optimising the management and the service to users."
+  link: "https://gwdg.zoom.us/meeting/register/mOIQBqS5SNq1ZI3aWSbomg"
+  linkText: "Registration Link"
 
 - date: "2026-10-02"
   sortDate: "2026-10-02"
@@ -46,8 +48,8 @@
   location: "Online"
   category: "Webinar"
   description: "Speakers: Paolo Budroni, Peter Wittenburg; The current practices can’t be continued since they will hamper making AI a commodity and addressing UN’s Sustainable Development Goals. A framework is required that also takes into account the different views and interests, that addresses sovereignty, transparency, traceability, accountability and persistence."
-  link: ""
-  linkText: "Hier einfüllen"
+  link: "https://gwdg.zoom.us/meeting/register/R3gMgG7FRRuJIFECoGOfXg"
+  linkText: "Registration Link"
 
 
 - date: "2026-03-25"
@@ -231,7 +233,7 @@
   location: "Online"
   category: "Webinar"
   description: "Speakers: Sven Bingert, Jana Böhm, Maximilian Inckmann; During the last year, the FDO specifications underwent a major reorganization: from a collection of official notes to one consolidated and harmonized W3C-style specification document. These updated specifications are built on five years of practical experience in creating, managing, and utilizing FDOs across various projects."
-  link: ""
-  linkText: ""
+  link: "https://gwdg.zoom.us/meeting/register/e75mq8zMRae-sygk-oWmRQ"
+  linkText: "Registration Link"
 
 
