@@ -82,7 +82,18 @@
                 <span aria-hidden="true">→</span>
               </a>
             {{ end }}
-
+            {{ with $event.announcement }}
+            &nbsp;&nbsp;
+              <a
+                class="event-card__link"
+                href="{{ . | safeURL }}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ "Announcement" }}
+                <span aria-hidden="true">→</span>
+              </a>
+            {{ end }}
           </div>
 
         </article>
