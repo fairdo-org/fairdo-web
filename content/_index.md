@@ -60,6 +60,7 @@ sections:
       label: "About us"
       url: "/fairdo-web/about/about/"
 
+  
   - type: stats
     title: "Impact in numbers"
     dark: true
@@ -73,13 +74,13 @@ sections:
       - source: "years"
         label: "Years of impact"
 
-  #- type: posts
-   # title: "Latest from our blog"
-    #section: "blog"
-    #count: 3
-    #link:
-      #label: "View all posts"
-      #url: "/blog"
+  - type: posts
+    title: "Latest News"
+    section: "news"
+    count: 3
+    link:
+      label: "View all news"
+      url: "news/"
 
   - type: cta
     title: "Ready to join the movement?"
