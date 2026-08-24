@@ -7,7 +7,11 @@ This section provides an overview of our regular meetings, workshops, and confer
 
 #### Regular Meetings
 
-{{< events-list category="Meeting" >}}
+{{< events-list category="Regular" >}}
+
+#### Webinars
+
+{{< events-list category="Webinar" >}}
 
 #### Workshops
 
