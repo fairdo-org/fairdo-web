@@ -5,7 +5,7 @@
 #   time        – time range
 #   title       – event title
 #   location    – where the event takes place
-#   category    – event category, e.g. on of [Meeting, Workshop, Conference]
+#   category    – event category, e.g. on of [Meeting, Workshop, Conference, Regular]
 #   description – short description (optional)
 #   link        – external registration/reference URL (optional)
 #   linkText    – link label (optional)
@@ -15,39 +15,36 @@
   time: "17:00 - 18:00 CEST" 
   title: "FDOF EC Meeting"
   location: "Online"
-  category: "Meeting"
-  #description: "Meeting of the Executive Committee"
+  category: "Regular"
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-30"
   time: "17:00 - 18:00 CEST" 
   title: "FDOF TSIG"
   location: "Online"
-  category: "Meeting"
-  #description: "Technical Specification & Implementation Group Meeting"
+  category: "Regular"
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-29"
   time: "17:00 - 18:00 CEST" 
   title: "FDOF SC Meeting"
   location: "Online"
-  category: "Meeting"
-  #description: "Meeting of the Execut Steering Committee"
-
+  category: "Regular"
+ 
 - date: "2026-09-15"
-  sortDate: "2026-09-13"
-  time: "???? CEST"
+  sortDate: "2026-09-15"
+  time: 14:30 CEST"
   title: "From Modernizing a Data Center to Designing an Information-Centric One"
   location: "Online"
-  category: "Workshop"
+  category: "Webinar"
   description: "Speaker: Massimo Fares (INGV); How the Italian Seismology and Vulcanology Institute turns its repository covering sensor and observation data of different types to an information centric one optimising the management and the service to users."
 
 - date: "2026-10-02"
   sortDate: "2026-10-02"
-  time: "???? CEST"
+  time: 14:30 CEST
   title: "Conceiving an Architecture of Trust"
   location: "Online"
-  category: "Workshop"
+  category: "Webinar"
   description: "Speakers: Paolo Budroni, Peter Wittenburg; The current practices can’t be continued since they will hamper making AI a commodity and addressing UN’s Sustainable Development Goals. A framework is required that also takes into account the different views and interests, that addresses sovereignty, transparency, traceability, accountability and persistence."
   link: ""
   linkText: "Hier einfüllen"
@@ -229,10 +226,10 @@
 
 - date: "2026-30-10"
   sortDate: "2026-30-10"
-  time: "??? CEST"
+  time: 14:30 CEST"
   title: "FDO Specifications 2026"
   location: "Online"
-  category: "Workshop"
+  category: "Webinar"
   description: "Speakers: Sven Bingert, Jana Böhm, Maximilian Inckmann; During the last year, the FDO specifications underwent a major reorganization: from a collection of official notes to one consolidated and harmonized W3C-style specification document. These updated specifications are built on five years of practical experience in creating, managing, and utilizing FDOs across various projects."
   link: ""
   linkText: ""
