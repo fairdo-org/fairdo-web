@@ -1,4 +1,3 @@
-#baseURL = "https://fairdo-org.github.io/fairdo-web/"
 baseURL = "https://fairdo.org"
 languageCode = "en-us"
 title = "FDO Forum"
@@ -12,7 +11,7 @@ theme = "fairdo"
 
   [params.ctaButton]
     label = "Get Involved"
-    url   = "https://fairdo-org.github.io/fairdo-web/contact"
+    url   = "/contact"
 
 #  [[params.social]]
 #    name = "Twitter"

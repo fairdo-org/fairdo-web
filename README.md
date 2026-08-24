@@ -3,7 +3,7 @@
 This repository hosts the webpages of the FDO Forum (Fair Digital Objects Forum).
 
 The rendered preview can be seen here:
-https://fairdo-org.github.io/fairdo-web/
+https://fairdo-org.github.io/
 
 The official website is https://fairdo.org
 

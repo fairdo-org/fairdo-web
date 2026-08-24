@@ -37,19 +37,19 @@ sections:
         text: "Helping researchers and institutions adopt FAIR (Findable, Accessible, Interoperable, Reusable) data principles."
         link: 
           label: "Learn more"
-          url: "https://fairdo-org.github.io/fairdo-web/about/what_is_an_fdo/"
+          url: "/about/what_is_an_fdo/"
       - emoji: "🌐"
         title: "Events"
         text: "Upcoming events and important dates"
         link: 
           label: "Learn more"
-          url: "https://fairdo-org.github.io/fairdo-web/events/calendar/"
+          url: "/events/calendar/"
       - emoji: "📄"
         title: "Papers"
         text: "Papers, reports, and specifications that underpin the theory and practice of FAIR Digital Objects."
         link:
           label: "Learn more"
-          url: "https://fairdo-org.github.io/fairdo-web/documents/fdo_papers/"
+          url: "/documents/fdo_papers/"
 
   - type: split
     eyebrow: "Our mission"
@@ -58,7 +58,7 @@ sections:
     image: "images/grafik-daten-768x704.png"
     button:
       label: "About us"
-      url: "/fairdo-web/about/about/"
+      url: "/about/about/"
 
   
   - type: stats
@@ -87,8 +87,8 @@ sections:
     text: "Whether you're a researcher, institution, or advocate — there's a place for you."
     primaryButton:
       label: "Get Involved"
-      url: "https://fairdo-org.github.io/fairdo-web/contact/"
+      url: "/contact/"
     secondaryButton:
       label: "Contact us"
-      url: "https://fairdo-org.github.io/fairdo-web/contact/"
+      url: "/contact/"
 ---
