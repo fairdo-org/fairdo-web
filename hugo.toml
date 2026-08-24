@@ -17,9 +17,9 @@ theme = "fairdo"
 #  [[params.social]]
 #    name = "Twitter"
 #    url  = "https://twitter.com/yourorg"
-#  [[params.social]]
-#    name = "LinkedIn"
-#    url  = "https://linkedin.com/company/yourorg"
+ [[params.social]]
+    name = "LinkedIn"
+    url  = "https://www.linkedin.com/in/fdo-forum/"
 
   [[params.social]]
     name = "Zenodo"
