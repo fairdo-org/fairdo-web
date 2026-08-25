@@ -13,25 +13,19 @@
 
 - date: "Every first Monday of the month"
   sortDate: "2999-12-31"
-  time: "17:00 - 18:00 CEST" 
   title: "FDOF EC Meeting"
-  location: "Online"
   category: "Regular"
   description: Attendance by invitation only
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-30"
-  time: "17:00 - 18:00 CEST" 
   title: "FDOF TSIG"
-  location: "Online"
   category: "Regular"
   description: Attendance by invitation only
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-29"
-  time: "17:00 - 18:00 CEST" 
   title: "FDOF SC Meeting"
-  location: "Online"
   category: "Regular"
   description: Attendance by invitation only
  
