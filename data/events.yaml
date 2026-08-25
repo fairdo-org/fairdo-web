@@ -17,6 +17,7 @@
   title: "FDOF EC Meeting"
   location: "Online"
   category: "Regular"
+  description: Attendance by invitation only
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-30"
@@ -24,6 +25,7 @@
   title: "FDOF TSIG"
   location: "Online"
   category: "Regular"
+  description: Attendance by invitation only
 
 - date: "Every second Monday of the month"
   sortDate: "2999-12-29"
@@ -31,6 +33,7 @@
   title: "FDOF SC Meeting"
   location: "Online"
   category: "Regular"
+  description: Attendance by invitation only
  
 - date: "2026-09-15"
   sortDate: "2026-09-15"
