@@ -25,10 +25,12 @@ Renders a simple bulleted list of events from data/events.yml for the given cate
     {{ with .date }}– {{ . }}{{ end }}
     {{ with .time }}({{ . }}){{ end }}
     {{ if .announcement }}
-       <a href="{{ with .announcement }}· {{ . }}{{ end }}">Announcement</a>
+       <a href="{{ with .announcement }}{{ . }}{{ end }}">Announcement</a>
     {{ end }}
+    
     {{ if eq .linkText "Registration Link"}}
-        <a href="{{ with .link }}· {{ . }}{{ end }}">Registration</a>
+        &nbsp; - &nbsp;
+        <a href="{{ with .link }}{{ . }}{{ end }}">Registration</a>
     {{ end }}
   </li>
   {{ end }}
