@@ -10,7 +10,7 @@ This section provides an overview of our regular meetings, workshops, and confer
 {{< events-list category="Regular" >}}
 
 Attendance at regular meetings is by invitation only.
-If you're interested please [contact](/contact)
+If you're interested please [contact](/contact) us.
 
 #### Webinars
 
