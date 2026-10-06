@@ -1,0 +1,43 @@
+# .github/workflows/test-deploy.yml
+name: Deploy Test Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - test-deploy
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: staging
+          HUGO_ENV: staging
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          branch: test-deploy
+          force_orphan: true
+          clean: true

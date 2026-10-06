@@ -13,27 +13,21 @@ theme = "fairdo"
     label = "Get Involved"
     url   = "/contact"
 
-#  [[params.social]]
-#    name = "Twitter"
-#    url  = "https://twitter.com/yourorg"
- [[params.social]]
-    name = "LinkedIn"
-    url  = "https://www.linkedin.com/in/fdo-forum/"
+[[params.social]]
+  name = "LinkedIn"
+  url  = "https://www.linkedin.com/in/fdo-forum/"
 
-  [[params.social]]
-    name = "Zenodo"
-    url  = "https://zenodo.org/communities/fdoforum/"
-  [[params.social]]
-    name = "YouTube"
-    url  = "https://www.youtube.com/@fairdigitalobjectsforum1705"
-  [[params.social]]
-    name = "GitHub"
-    url  = "https://github.com/fairdo-org"
+[[params.social]]
+  name = "Zenodo"
+  url  = "https://zenodo.org/communities/fdoforum/"
 
-[[menu.main]]
-  name   = "About"
-  url    = "/about"
-  weight = 10
+[[params.social]]
+  name = "YouTube"
+  url  = "https://www.youtube.com/@fairdigitalobjectsforum1705"
+
+[[params.social]]
+  name = "GitHub"
+  url  = "https://github.com/fairdo-org"
 
 [[menu.main]]
   name   = "About"
@@ -43,19 +37,19 @@ theme = "fairdo"
 [[menu.main]]
   name   = "FDOF Phase I"
   url    = "/about/fdof_phase1"
-  parent =  "About"
+  parent = "About"
   weight = 10
 
 [[menu.main]]
   name   = "FDOF Phase II"
   url    = "/about/fdof_phase2"
-  parent =  "About"
+  parent = "About"
   weight = 10
 
 [[menu.main]]
   name   = "What is an FDO?"
   url    = "/about/what_is_an_FDO"
-  parent =  "About"
+  parent = "About"
   weight = 10
 
 [[menu.main]]
@@ -89,6 +83,12 @@ theme = "fairdo"
 [[menu.main]]
   name   = "Code of Conduct"
   url    = "/documents/fdo_code_of_conduct"
+  parent = "Documents"
+  weight = 10
+
+[[menu.main]]
+  name   = "Compliance Profiles"
+  url    = "/documents/compliance_profiles"
   parent = "Documents"
   weight = 10
 
@@ -163,11 +163,6 @@ theme = "fairdo"
   url    = "/members"
   parent = "Organisation"
 
-#[[menu.footer]]
-#  name   = "Careers"
-#  url    = "/careers"
-#  parent = "Organisation"
-
 [[menu.footer]]
   name   = "Resources"
   weight = 20
@@ -206,7 +201,7 @@ theme = "fairdo"
 
 [taxonomies]
 
-[[ menu.main ]]
+[[menu.main]]
   name   = "All Members"
   url    = "/members"
   weight = 35
