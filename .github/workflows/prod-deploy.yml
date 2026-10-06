@@ -1,5 +1,5 @@
 # .github/workflows/gh-pages.yml
-name: Deploy Hugo site to GitHub Pages
+name: Production Deployment via SFTP
 
 on:
   push:
