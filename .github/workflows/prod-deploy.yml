@@ -28,9 +28,9 @@ jobs:
 
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'staging' : 'production' }}
-          HUGO_ENV: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'staging' : 'production' }}
-          HUGO_BASEURL: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'https://fairdo-org.github.io/fairdo-web/' : 'https://fairdo.org/' }}
+          HUGO_ENVIRONMENT: 'refs/heads/main' 
+          HUGO_ENV: 'refs/heads/main' 
+          HUGO_BASEURL: 'https://fairdo.org/' 
         run: hugo --minify
 
       - name: SFTP upload
