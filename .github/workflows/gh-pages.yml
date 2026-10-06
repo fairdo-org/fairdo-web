@@ -5,10 +5,12 @@ on:
   push:
     branches:
       - main
+    tags:
+      - "v*"
   workflow_dispatch:
 
 permissions:
-  contents: write  # needed to push to gh-pages branch
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -28,13 +30,16 @@ jobs:
 
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: hugo --minify -d ./fairdo-web
+          HUGO_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'staging' : 'production' }}
+          HUGO_ENV: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'staging' : 'production' }}
+          HUGO_BASEURL: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'https://fairdo-org.github.io/fairdo-web/' : 'https://fairdo.org/' }}
+        run: hugo --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages  # this is actually the default
+          publish_branch: gh-pages
+          force_orphan: true
+          clean: true

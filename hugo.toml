@@ -1,4 +1,4 @@
-baseURL = "https://fairdo.org"
+baseURL = ""
 languageCode = "en-us"
 title = "FDO Forum"
 theme = "fairdo"
