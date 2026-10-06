@@ -1,0 +1,39 @@
+# data/compliance.yaml
+# Compliance profile template for FDO Forum
+# Each entry contains:
+#   title: Title of the compliance profile
+#   name: Name of the submitter
+#   affiliation: Affiliation of the submitting person
+#   email: Email of the submitting person (optional)
+#   application: Name of your application or project, give a short name as reference
+#   references: Include references to the main project 
+#   information: Which information is bundled by your FDO? (data, software, descriptive metadata, 
+#           rights metadata, configurations, etc.)
+#   config_type: Which FDO configuration type(s) are you using? (for questions about configuration 
+#           types look here: https://doi.org/10.5281/zenodo.7825702, if you use a different one as 
+#           mentioned in the document, briefly describe the type)
+#   pid_system: Do you use a PID system to identify your FDOs? (Handles, DOIs, URL/URIs, etc.) No/ Yes And if so, which?
+#   resolve_answer: To what kind of structure is the PID resolved? (HTML landing page, PID record, etc.?)
+#   profiles: Do you use FDO profiles to describe the resulting structure? If so, where are they stored and 
+#           according to which schema are they defined? Where can one find an example?
+#   kernel_attributes: Do you include the mandatory kernel attributes in the resulting structure which the PID 
+#           resolves to (FDO profile reference and type)? How and where are they specified?
+#   data_references: If the FDO includes data and/or metadata bit-sequences, does the structure which the PID 
+#           resolves to include references to them? (could be several different data and/or metadata bit-sequences)
+#   attributes: Which other kernel attributes do you include in the structure which the PID resolves to? 
+#           Where are they defined and registered?
+
+title: 
+name: 
+affiliation: 
+email: 
+application: 
+references: 
+information: 
+config_type: 
+pid_system: 
+resolve_answer: 
+profiles: 
+kernel_attributes: 
+data_references: 
+attributes: 

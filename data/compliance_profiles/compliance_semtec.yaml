@@ -1,0 +1,41 @@
+title: ZB MED SemTec
+name: Leyla Jael Castro
+affiliation: ZB MED
+application: >
+  SemTec Team pages (available). MLentory (not released yet but same
+  approach described here)).
+references: >
+  No documentation available only the actual pages at
+  https://zbmed-semtec.github.io/ Right now only projects and theses
+  implement Signposting and RO-crate
+information: >
+  Descriptive metadata, rights metadata, optional data and software (via
+  links, not the bit-sequence yet)
+config_types: >
+  Configuration type 9 and 10. We use W3id as PID but there is no PID
+  record in that case. The bit-sequence is pointed to via a detached
+  RO-Crate record.
+pid_system: Yes, W3ID.org (httaccess redirection, kind of handle)
+resolve_answer: HTML landing page.
+profiles: >
+  We use RO-crate and some Bioschemas profiles. Profiles are accessible on
+  the project pages (https://www.researchobject.org/ro-crate/specification
+  and https://bioschemas.org/profiles).<br>Both rely on
+  schema.org.<br>Example RO-crate profile:
+  https://www.researchobject.org/ro-crate/specification/1.1/root-data-entity#direct-properties-of-the-root-data-entity<br>Example
+  of Bioschemas profile: https://bioschemas.org/profiles/ComputationalTool
+kernel_attributes: >
+  We use Signposting for the type and the RO-crate profile. Example at
+  https://zbmed-semtec.github.io/theses/2023_Protein_function_embeddings/
+data_references: >
+  The metadata is exposed with JSON-LD, not a a binary file. The metadata
+  includes links to the downloadable files, we do not include yet the
+  actual binary files. We plan to do it in the following way: the
+  Signposting in the landing page will point to an RO-crate package that
+  will include the binary files that will be referenced in the metadata
+  about the RO-crate itself.
+attributes: >
+  Creation and latest modification dates, and the version are commonly
+  included, using schema.org attributes in either the RO-crate package or
+  the metadata describing the actual research artifact.
+

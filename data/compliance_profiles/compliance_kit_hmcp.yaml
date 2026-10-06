@@ -1,0 +1,53 @@
+title: Karlsruhe Institute of Technology - Helmholtz Metadata Collaboration Platform
+name: Andreas Pfeil
+affiliation: Karlsruhe Institute of Technology
+application: Helmholtz Metadata Collaboration Platform (HMC)
+references: https://doi.org/10.3289/HMC_publ_03
+information: >
+  Profile reference, data and metadata locations, descriptive and rights
+  metadata, refences to related FAIR DOs, depending on use-case more or
+  less extensive scientific descriptive metadata
+config_types: >
+  Type 3, with the difference that the backlink to PID1 is in the kernel
+  information record of PID2, and may not be in the metadata itself (as
+  its schema is usually fixed and doesn&rsquo;t support it).
+pid_system: Yes,  Handle System
+resolve_answer: >
+  Handle record. For human interaction, we also allow setting the URL
+  field value of the handle system to any information which is also within
+  a typed attribute (e.g. a digitalObjectLocation or a landing page). This
+  avoids untyped additional information, while still supporting human
+  interactions with PIDs as known from DOIs. Machines will just read the
+  record.
+profiles: >
+  Yes. Implementation is here:
+  https://dtr-test.pidconsortium.net/#objects/21.T11148/b9b76f887845e32d29f7.
+  The profile schema of dtr-test is here:
+  https://dtr-test.pidconsortium.net/#objects/21.T11148/532ce6796e2828dd2be6
+  We use the Typed PID Maker for validation and prefix access (create,
+  update, resolve, implicit validation, explicit validation). The Typed
+  PID Maker takes one of currently two supported JSON representations of a
+  PID record as input. Attribute validation is currently being done with
+  either the type-api (https://typeapi.lab.pidconsortium.net/) or legacy
+  schemas in dtr-test (one of them has to work out for the validation to
+  succeed). Profile validation (obligation, cardinality, etc) is
+  implemented locally on an internal representation.
+kernel_attributes: >
+  Yes. Our current version is fully defined in dtr-test
+  (https://dtr-test.pidconsortium.net/#objects/21.T11148/b9b76f887845e32d29f7).
+  It uses the Kernel Information Profile attribute
+  (https://dtr-test.pidconsortium.net/#objects/21.T11148/076759916209e5d62bd5)
+  and the digitalObjectType
+  (https://dtr-test.pidconsortium.net/#objects/21.T11148/1c699a5d1b4ad3ba4956).
+  We currently use custom types in the DTR as values for the DOtype and
+  await further experiences from applications or even some consensus on
+  how to improve on them.
+data_references: >
+  Yes (configuration type 3). There is the digitalObjectLocation and the
+  relation fields, one of them is &bdquo;hasMetadata&ldquo;, pointing to
+  the PID of the metadata. Both attributes are repeatable.
+attributes: >
+  They are defined and registered the same as all other attributes (see
+  other questions). The full list can be found in the profile:
+  https://dtr-test.pidconsortium.net/#objects/21.T11148/b9b76f887845e32d29f7
+

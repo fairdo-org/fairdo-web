@@ -1,0 +1,31 @@
+title: The University of Manchester WorkflowHub
+name: Stian Soiland-Reyes
+affiliation: The University of Manchester
+application: WorkflowHub
+references: https://about.workflowhub.eu/
+information: Workflows, license, attributions, software citations, workflow runs
+config_types: Configuration Type 10 with Signposting
+pid_system: >
+  Yes, DOIs via Datacite e.g. https://doi.org/10.48546/workflowhub.workflow.29.3 with fallback URL identifiers 
+  for entries with incomplete kernel metadata
+resolve_answer: >
+  A DOI like https://doi.org/10.48546/workflowhub.workflow.29.3 resolves to HTML landing page
+  https://workflowhub.eu/workflows/29?version=3 with FAIR Signposting and content negotiation, leading to RO-Crate
+  https://workflowhub.eu/workflows/29/ro_crate?version=3, JSON-LD https://workflowhub.eu/workflows/29.jsonld and DataCite XML.
+profiles: >
+  Workflow RO-Crate profile https://w3id.org/workflowhub/workflow-ro-crate/ with example
+  https://about.workflowhub.eu/Workflow-RO-Crate/example/ (JSON-LD and HTML)
+kernel_attributes: > 
+  Kernel attributes according to DataCite Metadata Schema https://schema.datacite.org/meta/kernel-4.6/
+  and RO-Crate requirements https://www.researchobject.org/ro-crate/quick-reference
+  data_references: Each WorkflowHub entry links to an RO-Crate ZIP as bit-sequence using Signposting, as well as
+  signposting to metadata as JSON-LD. The linked RO-Crate bit-sequenced contains the identifier of the WorkflowHub landing
+  page, which has Signposting back to the DOI. Not all entries are assigned PIDs (requested by users when metadata is
+  complete), but all bit-sequences have the identifier. See project deliverable https://doi.org/10.5281/zenodo.15094824
+  for details on FDO implementation in WorkflowHub using Signposting.
+attributes: >
+  BioSchemas ComputationalWorkflow https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE
+  annotations on the landing page e.g. https://workflowhub.eu/workflows/29 to describe the workflow. DataCite metadata is
+  propagated to OpenAIRE e.g. https://explore.openaire.eu/search/software?pid=10.48546%2Fworkflowhub.workflow.29.3
+  Collections e.g. https://workflowhub.eu/collections/33 are also exposed as JSON-LD markup using schema.org, planned to
+  be assigned DOI as a Datacite Collection type.

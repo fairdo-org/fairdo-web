@@ -1,0 +1,33 @@
+title: Naturalis Biodiversity Center - DiSSCo Digital Specimen Architecture
+name: Wouter Addink
+affiliation: Naturalis Biodiversity Center
+application: DiSSCo Digital Specimen Architecture
+references: https://github.com/DiSSCo/dissco-developers-documentation/wiki
+information: data and metadata
+config_types: >
+  type 6, although we do not (currently) define operations. The FDO profile only describes the structure of
+  the digital object that the pid record redirects to.
+pid_system: Yes, Handles and DOIs (which are also Handles)
+resolve_answer: >
+  PID record (Handle record), that has multiple redirects, e.g. to a HTML landing page and to a JSON
+  representation, sometimes also to other HTML pages or a bit sequence of a media object (depending on the DO type)
+profiles: >
+  yes, these are stored in DTR Test provided by ePIC, for example
+  https://dtr-test.pidconsortium.net/#objects/21.T11148/d8de0819e144e4096645 and
+  https://dtr-test.pidconsortium.net/#objects/21.T11148/306452d0867adb910803 which link to a further description (json
+  schema) in https://schemas.dissco.tech/schemas/<br>objects are created, documented
+  and validated based on these schemas so they are always compliant.<br>In
+  the near future we aim to migrate either to EOSC DTR
+  (https://typeregistry.pidconsortium.net) or stop using a DTR and only
+  rely on our schema repository (DTR does not seem to get momentum and
+  there is no progress in migrating our current profiles). Our schema
+  repository fits our needs and a DTR is only beneficial with an active
+  community managing and aligning the definitions.
+kernel_attributes: >
+  Yes. These are specified in
+  https://dtr-test.pidconsortium.net/#objects/21.T11148/d8de0819e144e4096645 and in
+  https://schemas.dissco.tech/schemas/fdo-profile/handle-kernel/1.0.0/handle-kernel.json
+data_references: yes, through 10320/loc. See for an example https://doi.org/10.3535/492-QSL-9GZ?noredirect
+attributes: >
+  These depend on the DO Type and are also defined in https://dtr-test.pidconsortium.net/ and 
+  in https://schemas.dissco.tech/schemas/

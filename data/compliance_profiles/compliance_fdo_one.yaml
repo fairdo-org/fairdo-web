@@ -1,0 +1,47 @@
+title: GWDG FDO One
+name: Jana Böhm
+affiliation: GWDG
+application: FDO One
+references: https://gitlab.com/fairdo, https://fdo-one.org/
+information: >
+  FDOs data/metadata resources: data, descriptive metadata. Other FDOs:
+  operation-FDOs, service-FDOs, attribute-FDOs, profile-FDOs.
+  Planned/still under discussion: FDOs for the FDO type, FDO genre, rights
+  specifications
+config_types: >
+  configuration type 4 (Actually, our configuration type also allows
+  entering multiple data and metadata bit-sequences. However, each
+  bit-sequence is identified by an own PID same as in configuration type 4.)
+pid_system: Yes, Handle
+resolve_answer: Handle record
+profiles: >
+  Yes, we use the DTR to store FDO profiles in JSON format and use the TypeAPI
+  (https://typeapi.lab.pidconsortium.net/) to retrieve the schemas. Profiles are stored at
+  https://typeregistry.lab.pidconsortium.net/#objects/?query=type:&ldquo;Profile&ldquo; (profile registry). However, this
+  registry also stores other profiles not used in the FDO context. We are currently building up a registrysolely for FDO
+  profiles at typeregistry.testbed.pid.gwdg.de (also, other
+  registries such as for attributes, FDO types, FDO genres, FDO operations
+  will be built here).
+kernel_attributes: >
+  Yes, the profile includes two fields called &ldquo;FDO_Type_Ref&rdquo;
+  (https://typeregistry.lab.pidconsortium.net/#objects/21.T11969/2bb5fec05c00bb89793e )and &ldquo;FDO_Profile_Ref&rdquo;
+  (https://typeregistry.lab.pidconsortium.net/#objects/21.T11969/bcc54a2a9ab5bf2a8f2c).
+  Those attributes are instanciated by PIDs referencing an FDO type
+  respectively FDO profile. However, currently, it is still under
+  discussion how the FDO type actually looks like. Probably it would be
+  helpful to discuss in the context of the FDO forum what the FDO type
+  actually is meant to be.
+data_references: >
+  Yes, the resolved PID structure has the fields
+  &ldquo;FDO_Data_Refs&rdquo; and &ldquo;FDO_MD_Refs&rdquo; which contain
+  arrays of PIDs which identify data respectively metadata bit-sequences.
+attributes: >
+  The profile (https://typeregistry.lab.pidconsortium.net/#objects/21.T11969/141bf451b18a79d0fe66)
+  contains the following kernel attributes:<br>FDO_Type_Ref: PID
+  referencing a FDO type<br>FDO_Profile_Ref: PID referencing a FDO
+  profile<br>FDO_Data_Refs: Array of PIDs where each references a data
+  bit-sequence<br>FDO_MD_Refs: Array of PIDs where each references a
+  metadata bit-sequence<br>FDO_Genre_Ref: PID referencing a FDO
+  genre<br>FDO_Rights_Ref: reference to a rights
+  specification<br>FDO_Status: status of the FDO, string: created,
+  deleted, embargoed, moved, &hellip;<br>They are registered in the DTR (see question 10).
