@@ -1,0 +1,44 @@
+# .github/workflows/gh-pages.yml
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'staging' : 'production' }}
+          HUGO_ENV: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'staging' : 'production' }}
+          HUGO_BASEURL: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' ? 'https://fairdo-org.github.io/fairdo-web/' : 'https://fairdo.org/' }}
+        run: hugo --minify
+
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@latest
+        with:
+          server: vwebfile.gwdg.de
+          username: gwdg.fdo-wordpress
+          password: ${{secrets.password}}
+          port: 2222
+          uploads: |
+          ./public => ./www/test/
