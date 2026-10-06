@@ -30,7 +30,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: hugo --minify
+        run: hugo --minify -d fairdo-web
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
