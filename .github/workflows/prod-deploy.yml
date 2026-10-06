@@ -38,6 +38,6 @@ jobs:
         with:
           server: vwebfile.gwdg.de
           username: gwdg.fdo-wordpress
-          password: ${{secrets.password}}
+          password: ${{secrets.sftp_pass}}
           port: 2222
           uploads: ./public => ./www/test
