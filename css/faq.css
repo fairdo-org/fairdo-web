@@ -1,0 +1,115 @@
+/* FAQ Container */
+.faq-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* FAQ Item */
+.faq-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.faq-item.open {
+  border-color: #0077cc;
+  box-shadow: 0 8px 20px rgba(0,119,204,0.15);
+}
+
+/* Frage */
+.faq-question {
+  padding: 1.2rem 1.5rem;
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #eef3ff;
+}
+
+.faq-question .icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .icon {
+  transform: rotate(45deg);
+}
+
+/* Antwort */
+.faq-answer {
+  max-height: 0;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  background-color: #ffffff;
+
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
+}
+
+.faq-item.open .faq-answer {
+  /*
+   * Maximale Höhe der geöffneten Antwortbox.
+   * Längere Inhalte werden innerhalb der Box gescrollt.
+   */
+  max-height: 24rem;
+  padding: 1.25rem 1.5rem;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* Scrollbuton */
+.faq-answer {
+  scrollbar-width: thin;
+  scrollbar-color: #b8c4d0 transparent;
+}
+
+.faq-answer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.faq-answer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.faq-answer::-webkit-scrollbar-thumb {
+  background-color: #b8c4d0;
+  border-radius: 999px;
+}
+
+.faq-answer::-webkit-scrollbar-thumb:hover {
+  background-color: #7f91a3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-container {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .faq-question {
+    padding: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .faq-answer {
+    padding: 0.8rem 1rem;
+  }
+}
