@@ -63,10 +63,16 @@ theme = "fairdo"
   weight = 25
 
 [[menu.main]]
+  name   = "Code of Conduct"
+  url    = "/documents/fdo_code_of_conduct"
+  parent = "Documents"
+  weight = 10
+
+[[menu.main]]
   name   = "Bulletin"
   url    = "/documents/fdo_bulletins"
   parent = "Documents"
-  weight = 20
+  weight = 15
 
 [[menu.main]]
   name   = "Papers"
@@ -78,19 +84,20 @@ theme = "fairdo"
   name   = "Specifications"
   url    = "/documents/fdo_specifications"
   parent = "Documents"
-  weight = 20
-
-[[menu.main]]
-  name   = "Code of Conduct"
-  url    = "/documents/fdo_code_of_conduct"
-  parent = "Documents"
-  weight = 10
+  weight = 25
 
 [[menu.main]]
   name   = "Compliance Profiles"
-  url    = "/documents/compliance_profiles"
+  url    = "/documents/fdo_compliance_profiles"
   parent = "Documents"
-  weight = 10
+  weight = 30
+
+[[menu.main]]
+  name   = "Downloads"
+  url    = "/documents/fdof_downloads"
+  parent = "Documents"
+  weight = 35
+
 
 [[menu.main]]
   name   = "Events"
