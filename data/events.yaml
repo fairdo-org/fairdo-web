@@ -29,6 +29,17 @@
   category: "Regular"
   description: Attendance by invitation only
  
+- date: "2026-11-19"
+  sortDate: "2026-11-19"
+  time: 16:00 CEST
+  title: "Scientific Motivation to use FDO"
+  location: "Online"
+  category: "Webinar"
+  description: "Speaker: Laura Biven, Dimitris Koureas"
+  link: "https://gwdg.zoom.us/meeting/register/xEPT9aRkQKWqdR4NOn56lA"
+  linkText: "Registration Link"
+  #announcement: "https://drive.google.com/file/d/198-KZWvj6pyXlMOnssrriCetgLVYj5HF/view?usp=sharing"
+
 - date: "2026-09-15"
   sortDate: "2026-09-15"
   time: 14:30 CEST
@@ -226,8 +237,8 @@
   linkText: "For details see this announcement"
 
 
-- date: "2026-30-10"
-  sortDate: "2026-30-10"
+- date: "2026-10-30"
+  sortDate: "2026-10-30"
   time: "14:30 CEST"
   title: "FDO Specifications 2026"
   location: "Online"
