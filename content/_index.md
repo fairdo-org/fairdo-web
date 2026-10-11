@@ -6,7 +6,7 @@ hero:
   eyebrow: "Open · Fair · Transparent"
   title: "Building fair digital infrastructure for everyone based on FAIR Digital Objects"
   subtitle: "We advance principles of openness and fairness across research, data, and digital systems by applying the FDOs as smallest meaningful and self-standing constituent in the world of data which is independent of technological implementations."
-  image: "/images/hero-bg.jpg"
+#  image: "/images/hero-bg.jpg"
   primaryButton:
     label: "Explore our work"
     url: "documents"
