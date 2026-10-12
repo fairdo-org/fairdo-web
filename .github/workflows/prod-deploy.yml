@@ -40,4 +40,4 @@ jobs:
           username: gwdg.fdo-wordpress
           password: ${{secrets.sftp_pass}}
           port: 2222
-          uploads: ./public => ./www/test
+          uploads: ./public => ./www/fairdo
