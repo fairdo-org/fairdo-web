@@ -38,6 +38,7 @@
   description: "Speaker: Laura Biven, Dimitris Koureas"
   link: "https://gwdg.zoom.us/meeting/register/xEPT9aRkQKWqdR4NOn56lA"
   linkText: "Registration Link"
+  announcement: "https://drive.google.com/file/d/1jzSCzhFp-BgN2z8hghCVuc4dgNagP661/view?usp=drive_link"
 
 - date: "2026-12-9"
   sortDate: "2026-12-9"
@@ -48,8 +49,7 @@
   description: "Speaker: Erik Schultes"
   link: "https://gwdg.zoom.us/meeting/register/89vyd_ozTmSjlDEOyQqbLQ"
   linkText: "Registration Link"
-  
-  #announcement: "https://drive.google.com/file/d/198-KZWvj6pyXlMOnssrriCetgLVYj5HF/view?usp=sharing"
+  announcement: "https://drive.google.com/file/d/13FjYI3XRUf8mIUlDrN0lquunH1AZ_l4B/view?usp=drive_link"
 
 - date: "2026-09-15"
   sortDate: "2026-09-15"
