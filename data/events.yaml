@@ -38,6 +38,17 @@
   description: "Speaker: Laura Biven, Dimitris Koureas"
   link: "https://gwdg.zoom.us/meeting/register/xEPT9aRkQKWqdR4NOn56lA"
   linkText: "Registration Link"
+
+- date: "2026-12-9"
+  sortDate: "2026-12-9"
+  time: 15:00 CEST
+  title: "FDOs for content, permission and operations"
+  location: "Online"
+  category: "Webinar"
+  description: "Speaker: Erik Schultes"
+  link: "https://gwdg.zoom.us/meeting/register/89vyd_ozTmSjlDEOyQqbLQ"
+  linkText: "Registration Link"
+  
   #announcement: "https://drive.google.com/file/d/198-KZWvj6pyXlMOnssrriCetgLVYj5HF/view?usp=sharing"
 
 - date: "2026-09-15"
