@@ -31,7 +31,7 @@
  
 - date: "2026-11-19"
   sortDate: "2026-11-19"
-  time: 16:00 CEST
+  time: 16:00 CET
   title: "Scientific Motivation to use FDO"
   location: "Online"
   category: "Webinar"
@@ -42,7 +42,7 @@
 
 - date: "2026-12-9"
   sortDate: "2026-12-9"
-  time: 15:00 CEST
+  time: 15:00 CET
   title: "FDOs for content, permission and operations"
   location: "Online"
   category: "Webinar"
@@ -250,7 +250,7 @@
 
 - date: "2026-10-30"
   sortDate: "2026-10-30"
-  time: "14:30 CEST"
+  time: "14:30 CET"
   title: "FDO Specifications 2026"
   location: "Online"
   category: "Webinar"
