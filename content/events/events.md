@@ -20,6 +20,11 @@ If you're interested please [contact](/contact) us.
 
 {{< events-list category="Workshop" >}}
 
+#### Meetings
+
+{{< events-list category="Meeting" >}}
+
+
 #### Conferences
 
 {{< events-list category="Conference" >}}

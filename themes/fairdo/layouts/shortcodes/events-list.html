@@ -28,11 +28,9 @@ Renders a simple bulleted list of events from data/events.yml for the given cate
        <a href="{{ with .announcement }}{{ . }}{{ end }}">Announcement</a>
     {{ end }}
     
-    {{ if eq .linkText "Registration Link"}}
         &nbsp; - &nbsp;
-        <a href="{{ with .link }}{{ . }}{{ end }}">Registration</a>
-    {{ end }}
-  </li>
+        <a href="{{ with .link }}{{ . }}{{ end }}">{{ .linkText }}</a>
+      </li>
   {{ end }}
 </ul>
 {{ end }}
